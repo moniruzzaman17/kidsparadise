@@ -1,5 +1,74 @@
 [
     {
+        "name": "artesaos/seotools",
+        "version": "v0.19.1",
+        "version_normalized": "0.19.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/artesaos/seotools.git",
+            "reference": "bad3f025748dde06e6e0730190b280e4d8bc0ab3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/artesaos/seotools/zipball/bad3f025748dde06e6e0730190b280e4d8bc0ab3",
+            "reference": "bad3f025748dde06e6e0730190b280e4d8bc0ab3",
+            "shasum": ""
+        },
+        "require": {
+            "ext-json": "*",
+            "illuminate/config": "5.8.* || ^6.0 || ^7.0 || ^8.0",
+            "illuminate/support": "5.8.* || ^6.0 || ^7.0 || ^8.0",
+            "php": ">=7.1"
+        },
+        "require-dev": {
+            "orchestra/testbench": "~3.8.4 || ^4.0 || ^5.0",
+            "phpspec/phpspec": "~5.1.1 || ^6.0"
+        },
+        "time": "2020-10-14T13:18:57+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "Artesaos\\SEOTools\\Providers\\SEOToolsServiceProvider"
+                ],
+                "aliases": {
+                    "SEOMeta": "Artesaos\\SEOTools\\Facades\\SEOMeta",
+                    "OpenGraph": "Artesaos\\SEOTools\\Facades\\OpenGraph",
+                    "Twitter": "Artesaos\\SEOTools\\Facades\\TwitterCard",
+                    "JsonLd": "Artesaos\\SEOTools\\Facades\\JsonLd",
+                    "SEO": "Artesaos\\SEOTools\\Facades\\SEOTools"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Artesaos\\SEOTools\\": "src/SEOTools/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Vinicius",
+                "email": "luiz.vinicius73@gmail.com"
+            }
+        ],
+        "description": "SEO Tools for Laravel and Lumen",
+        "keywords": [
+            "JSON-LD",
+            "laravel",
+            "lumen",
+            "metatags",
+            "opengraph",
+            "seo",
+            "seotools",
+            "webmaster"
+        ]
+    },
+    {
         "name": "asm89/stack-cors",
         "version": "v2.0.2",
         "version_normalized": "2.0.2.0",
@@ -3370,6 +3439,65 @@
             "guid",
             "identifier",
             "uuid"
+        ]
+    },
+    {
+        "name": "renatomarinho/laravel-page-speed",
+        "version": "1.9.0",
+        "version_normalized": "1.9.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/renatomarinho/laravel-page-speed.git",
+            "reference": "7639014cde1bbb8dbe3e22be6ff92bee00671625"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/renatomarinho/laravel-page-speed/zipball/7639014cde1bbb8dbe3e22be6ff92bee00671625",
+            "reference": "7639014cde1bbb8dbe3e22be6ff92bee00671625",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/support": "5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0 || ^7.0 || ^8.0",
+            "php": "^5.6 || ^7.0"
+        },
+        "require-dev": {
+            "mockery/mockery": ">=0.9.4",
+            "orchestra/testbench": "^3.2",
+            "phpunit/phpunit": "^5.7 || ^6.0 || ^7.0 || ^8.0",
+            "squizlabs/php_codesniffer": "^2.3"
+        },
+        "time": "2020-09-14T03:32:38+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "RenatoMarinho\\LaravelPageSpeed\\ServiceProvider"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "RenatoMarinho\\LaravelPageSpeed\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Renato Marinho",
+                "email": "renato.marinho@s2move.com"
+            }
+        ],
+        "description": "Laravel Page Speed",
+        "keywords": [
+            "html",
+            "laravel",
+            "minify",
+            "optimize",
+            "page speed"
         ]
     },
     {

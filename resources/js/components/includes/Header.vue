@@ -1,12 +1,8 @@
 <template>
-	<appHeader>
-	<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+	<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm container-fluid">
 		<div class="container">
-			{{-- <a class="navbar-brand" href="{{ url('/') }}">
-				{{ config('app.name', 'Laravel') }}
-			</a> --}}
-			<router-link class="navbar-brand" :to="{name: 'home'}">Kidsparadise</router-link>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+			<router-link class="navbar-brand" :to="{name: 'home'}"><img src="/img/logo.gif" alt=""></router-link>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
@@ -19,15 +15,15 @@
 				<!-- Right Side Of Navbar -->
 				<ul class="navbar-nav ml-auto">
 					<!-- Authentication Links -->
-					@guest
+					<!-- @guest -->
 					<li class="nav-item">
-						<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+						<a class="nav-link" href="">Login</a>
 					</li>
-					@if (Route::has('register'))
+					<!-- @if (Route::has('register')) -->
 					<li class="nav-item">
-						<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+						<a class="nav-link" href="">Register</a>
 					</li>
-					@endif
+					<!-- @endif
 					@else
 					<li class="nav-item dropdown">
 						<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -45,19 +41,18 @@
 							@csrf
 						</form>
 					</div>
-				</li>
-				@endguest
-			</ul>
+					</li>
+					@endguest -->
+				</ul>
+			</div>
 		</div>
-	</div>
-</nav>
-</appHeader>
+	</nav>
 </template>
 
 <script>
 	export default {
 		mounted() {
-			console.log('Component mounted.')
+			console.log('Header Component mounted.')
 		}
 	}
 </script>

@@ -20,10 +20,9 @@ require('./bootstrap');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-// Vue.component('app-header', require('./components/includes/Header.vue').default);
-import appHeader from './components/includes/Header.vue';
-// Vue.component('appHeader', require('./components/includes/Header.vue'));
 
+import AppHeader from './components/includes/Header.vue';
+Vue.component('app-header', AppHeader);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -33,7 +32,4 @@ import appHeader from './components/includes/Header.vue';
 const app = new Vue({
     el: '#app',
     router: routes,
-   components: {
-       appHeader,
-   }
 });

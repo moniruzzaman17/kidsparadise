@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Kidsparadise</title>
+    {!! SEO::generate() !!}
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -19,7 +19,7 @@
 </head>
 <body>
     <div id="app">
-        <appHeader></appHeader>
+        <app-header></app-header>
         <main class="py-4">
             @yield('content')
         </main>
