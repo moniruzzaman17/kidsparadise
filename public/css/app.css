@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css);@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
@@ -10901,5 +10901,80 @@ a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+
+.navbar.app-header .navbar-brand {
+  width: 110px;
+  float: none;
+}
+
+.navbar.app-header .navbar-menu li {
+  border-right: 1px solid #d4d4d4;
+  height: 23px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar.app-header .navbar-menu li i {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar.app-header .cart-nav-link {
+  position: relative;
+}
+
+.navbar.app-header .navbar-menu li .count {
+  background-color: #ea9101;
+  border-color: #ea9101;
+  position: absolute;
+  top: -8px;
+  left: -15px;
+  width: 32px;
+  height: 18px;
+  background-color: #096;
+  border-color: #096;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.navbar.app-header .navbar-menu li .count::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 55%;
+  border-top: 4px solid;
+  border-top-color: inherit;
+  border-left: 5px solid transparent;
+}
+
+.navbar-collapse {
+  background: white;
+  position: fixed;
+  top: 110px;
+  left: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  width: 83%;
+  height: 100%;
+  z-index: 99;
+}
+
+.navbar-collapse.collapsing {
+  left: -75%;
+  transition: height 0s ease;
+}
+
+.navbar-collapse.show {
+  left: 0;
+  transition: left 300ms ease-in-out;
+}
+
+.navbar-toggler.collapsed ~ .navbar-collapse {
+  transition: left 500ms ease-in-out;
 }
 
