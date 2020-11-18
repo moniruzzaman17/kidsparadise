@@ -78,20 +78,24 @@
 	</div>
 </nav> -->
 <div>
-	<div class="container header-vue">
-		<b-navbar toggleable="lg">
-
-			<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+	<div class="header-vue">
+		<b-navbar toggleable="lg" class="container">
+			<b-navbar-toggle v-b-toggle.sidebar-backdrop target="nav-collapse"></b-navbar-toggle>
 			<b-navbar-brand :to="{name: 'home'}" class="nav-brand-anchor"><img class="w-100" src="/img/logo.gif" alt=""></b-navbar-brand>
 
-			<b-collapse id="nav-collapse" is-nav>
+			<div class="desk-menu w-100">
 				<!-- Right aligned nav items -->
-				<b-navbar-nav class="w-100">
+				<b-navbar-nav class="w-100 d-flex align-items-center">
 					<b-nav-form class="w-100">
-						<b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
-						<b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
+						<!-- <b-form-input size="sm" class="mr-sm-2 serach-box" placeholder="Search"></b-form-input> -->
+						<div class="input-group">
+							<input type="text" class="form-control serach-box" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+							<div class="input-group-append serach-btn">
+								<span class="input-group-text search-icon" id="basic-addon2"><i class="fa fa-search text-grey" aria-hidden="true"></i></span>
+							</div>
+						</div>
 					</b-nav-form>
-					<b-navbar-nav class="w-100">
+					<b-navbar-nav class="w-100 navbar-menu">
 						<b-nav-item href="#">Track Order</b-nav-item>
 						<b-nav-item href="#" >Support</b-nav-item>
 						<b-nav-item href="#" >Login/Register</b-nav-item>
@@ -99,8 +103,69 @@
 						<b-nav-item href="#" ><i class="fas fa-shopping-cart"></i> Cart<span class="count">0</span></b-nav-item>
 					</b-navbar-nav>
 				</b-navbar-nav>
-			</b-collapse>
+			</div>
 		</b-navbar>
+		<div class="menu-container desk-menu w-100">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-dark">
+					<div class="" id="main_nav">
+						<ul class="navbar-nav product-menubar-ul">
+							<li class="nav-item d-flex align-items-center">
+								<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">  All Category  </a>
+								<div class="dropdown-menu">
+									<ul>
+										<li><a class="dropdown-item" href="#"> This is from more items</a></li>
+										<li><a class="dropdown-item" href="#"> This is from more All Category</a></li>
+										<li><a class="dropdown-item" href="#"> This is from more items</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item d-flex align-items-center">
+								<a class="nav-link" href="#" data-toggle="dropdown"> Home  </a>
+								<div class="dropdown-menu">
+									<ul>
+										<li><a class="dropdown-item" href="#"> This is from more Home</a></li>
+										<li><a class="dropdown-item" href="#"> This is from more Home</a></li>
+										<li><a class="dropdown-item" href="#"> This is from more Home</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item d-flex align-items-center">
+								<a class="nav-link" href="#" data-toggle="dropdown">Service  </a>
+								<div class="dropdown-menu">
+									<ul>
+										<li><a class="dropdown-item" href="#"> This is from more Service</a></li>
+										<li><a class="dropdown-item" href="#"> This is from more Service</a></li>
+										<li><a class="dropdown-item" href="#"> This is from more Service</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item d-flex align-items-center">
+								<a class="nav-link" href="#" data-toggle="dropdown">  Fashions  </a>
+								<div class="dropdown-menu">
+									<ul>
+										<li><a class="dropdown-item" href="#"> This is from more Fashions</a></li>
+										<li><a class="dropdown-item" href="#"> This is from more Fashions</a></li>
+										<li><a class="dropdown-item" href="#"> This is from more Fashions</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div> <!-- navbar-collapse.// -->
+				</nav>
+			</div>
+		</div>
+		<b-sidebar id="sidebar-backdrop" class="mob-side-bar" :backdrop-variant="variant" backdrop shadow>
+			<div class="sidebar-header row d-flex justify-content-between align-items-center w-100 shadow-sm">
+				<div class="action-menu d-flex align-items-center">
+					<i class="fas fa-user fa-user-icon"></i>
+					<a href="" class="login-btn">Login/Register</a>
+				</div>
+				<div class="header-img">
+					<img class="w-100" src="img/sidebar-header-img.png" alt="">
+				</div>
+			</div>
+		</b-sidebar>
 	</div>
 </div>
 </template>

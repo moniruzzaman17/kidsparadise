@@ -14309,3 +14309,134 @@ input[type=color].form-control:disabled {
   width: 100px;
 }
 
+@media (max-width: 768px) {
+  .header-vue .desk-menu {
+    display: none;
+  }
+
+  .header-vue #sidebar-backdrop .b-sidebar-header {
+    position: absolute;
+    right: 0;
+  }
+
+  .header-vue #sidebar-backdrop .sidebar-header {
+    height: 67px;
+    margin: auto;
+    background-image: url(/images/main-bg.jpg?ac03a1cd7da23bec9c80a0b3c09d46b7);
+    background-repeat: repeat;
+  }
+
+  .header-vue #sidebar-backdrop .sidebar-header .action-menu {
+    padding: 13px;
+  }
+
+  .header-vue #sidebar-backdrop .sidebar-header .fa-user-icon {
+    border: 1px solid;
+    border-radius: 25px;
+    padding: 4px;
+    font-size: 22px;
+    color: #00A9E2;
+  }
+
+  .header-vue #sidebar-backdrop .sidebar-header .login-btn {
+    margin-left: 5px;
+    color: black;
+  }
+
+  .header-vue #sidebar-backdrop .header-img {
+    width: 100px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 769px) {
+  .header-vue .desk-menu {
+    display: block;
+  }
+
+  .navbar-menu li a {
+    border-right: 1px solid;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .serach-box {
+    height: 28px;
+    width: 405px;
+    text-align: left;
+    color: #676767;
+    line-height: 30px;
+    padding: 17px;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    margin: 2px;
+  }
+
+  .serach-btn {
+    height: 28px;
+    color: #676767;
+    background: white;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    margin-left: -4px;
+    margin-top: 2px;
+    padding: 17px;
+  }
+
+  .serach-btn span {
+    background: white;
+    border: none;
+    padding: 0;
+  }
+
+  .menu-container {
+    height: 50px;
+    width: 100%;
+    background-color: #ffd91c;
+    z-index: 10;
+  }
+
+  .menu-container .navbar {
+    height: 50px;
+  }
+
+  .menu-container .product-menubar-ul li {
+    height: 50px;
+  }
+
+  .menu-container .product-menubar-ul li a.nav-link {
+    color: #575757 !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-container .product-menubar-ul li a.nav-link:hover {
+    background: #fff;
+    border-top: 4px solid #ffd91c;
+  }
+
+  .menu-container .dropdown-menu {
+    overflow-y: auto;
+    max-height: 400px;
+    right: 0;
+    border-top: none;
+  }
+
+  .menu-container .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+
+  .menu-container .navbar .nav-item:hover .nav-link {
+    color: #fff;
+  }
+
+  .menu-container .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+
+  .menu-container .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
+
