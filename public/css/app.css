@@ -14347,6 +14347,11 @@ input[type=color].form-control:disabled {
     width: 100px;
     overflow: hidden;
   }
+
+  .header-vue #sidebar-backdrop .sidebar-header-menu ul {
+    flex-direction: row;
+    list-style: none;
+  }
 }
 
 @media (min-width: 769px) {

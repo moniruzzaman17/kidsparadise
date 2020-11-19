@@ -165,6 +165,22 @@
 					<img class="w-100" src="img/sidebar-header-img.png" alt="">
 				</div>
 			</div>
+			<div class="sidebar-header-menu">
+				<ul class="d-flex justify-content-between p-0">
+					<li>
+						<i class="fas fa-user fa-user-icon"></i>
+						<a href="">Account</a>
+					</li>
+					<li>
+						<i class="fas fa-user fa-user-icon"></i>
+						<a href="">Support</a>
+					</li>
+					<li>
+						<i class="fas fa-user fa-user-icon"></i>
+						<a href="">Trac Order</a>
+					</li>
+				</ul>
+			</div>
 		</b-sidebar>
 	</div>
 </div>

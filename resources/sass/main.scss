@@ -41,6 +41,15 @@
 				width: 100px;
 				overflow: hidden;
 			}
+			.sidebar-header-menu{
+				ul{
+					flex-direction: row;
+					list-style: none;
+					li{
+						
+					}
+				}
+			}
 		}
 	}
 }
