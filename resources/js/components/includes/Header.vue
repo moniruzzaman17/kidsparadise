@@ -95,7 +95,7 @@
 							</div>
 						</div>
 					</b-nav-form>
-					<b-navbar-nav class="w-100 navbar-menu">
+					<b-navbar-nav class="w-100 navbar-menu d-flex justify-content-end">
 						<b-nav-item href="#">Track Order</b-nav-item>
 						<b-nav-item href="#" >Support</b-nav-item>
 						<b-nav-item href="#" >Login/Register</b-nav-item>
@@ -168,15 +168,15 @@
 			<div class="sidebar-header-menu">
 				<ul class="d-flex justify-content-between p-0">
 					<li>
-						<i class="fas fa-user fa-user-icon"></i>
+						<i class="fas fa-user fa-user-icon"></i><br>
 						<a href="">Account</a>
 					</li>
 					<li>
-						<i class="fas fa-user fa-user-icon"></i>
+						<i class="fas fa-user fa-user-icon"></i><br>
 						<a href="">Support</a>
 					</li>
 					<li>
-						<i class="fas fa-user fa-user-icon"></i>
+						<i class="fas fa-user fa-user-icon"></i><br>
 						<a href="">Trac Order</a>
 					</li>
 				</ul>

@@ -45,8 +45,10 @@
 				ul{
 					flex-direction: row;
 					list-style: none;
+					padding-left: 6px!important;
+					padding-right: 6px!important;
 					li{
-						
+						text-align: center;
 					}
 				}
 			}

@@ -14351,6 +14351,12 @@ input[type=color].form-control:disabled {
   .header-vue #sidebar-backdrop .sidebar-header-menu ul {
     flex-direction: row;
     list-style: none;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+
+  .header-vue #sidebar-backdrop .sidebar-header-menu ul li {
+    text-align: center;
   }
 }
 
