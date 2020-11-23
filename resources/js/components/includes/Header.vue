@@ -156,30 +156,42 @@
 			</div>
 		</div>
 		<b-sidebar id="sidebar-backdrop" class="mob-side-bar" :backdrop-variant="variant" backdrop shadow>
-			<div class="sidebar-header row d-flex justify-content-between align-items-center w-100 shadow-sm">
+			<div class="sidebar-header row d-flex justify-content-between align-items-center w-100">
 				<div class="action-menu d-flex align-items-center">
 					<i class="fas fa-user fa-user-icon"></i>
 					<a href="" class="login-btn">Login/Register</a>
 				</div>
 				<div class="header-img">
-					<img class="w-100" src="img/sidebar-header-img.png" alt="">
+					<img class="w-100 shadow-lg" src="img/sidebar-header-img.png" alt="">
 				</div>
 			</div>
 			<div class="sidebar-header-menu">
-				<ul class="d-flex justify-content-between p-0">
+				<ul class="d-flex justify-content-between p-0 shadow-sm">
 					<li>
-						<i class="fas fa-user fa-user-icon"></i><br>
+						<i class=""><img src="/media/icons/user.png" alt=""></i><br>
 						<a href="">Account</a>
 					</li>
 					<li>
-						<i class="fas fa-user fa-user-icon"></i><br>
-						<a href="">Support</a>
+						<i class=""><img src="/media/icons/orderhistory.png" alt=""></i><br>
+						<a href="">Order History</a>
 					</li>
 					<li>
-						<i class="fas fa-user fa-user-icon"></i><br>
-						<a href="">Trac Order</a>
+						<i class=""><img src="/media/icons/tracking.png" alt=""></i><br>
+						<a href="">Track Order</a>
 					</li>
 				</ul>
+			</div>
+			<div class="sidebar-body">
+				<div class="sidebar-menu">
+					<ul>
+						<li>
+							<a href=""><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+						</li>
+						<li>
+							ABOUT US
+						</li>
+					</ul>
+				</div>
 			</div>
 		</b-sidebar>
 	</div>

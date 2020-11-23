@@ -14322,7 +14322,7 @@ input[type=color].form-control:disabled {
   .header-vue #sidebar-backdrop .sidebar-header {
     height: 67px;
     margin: auto;
-    background-image: url(/images/main-bg.jpg?ac03a1cd7da23bec9c80a0b3c09d46b7);
+    background-image: url(/images/main-bg.jpg?cfae83914fb2627c6b22b2a0e522e3b8);
     background-repeat: repeat;
   }
 
@@ -14351,12 +14351,26 @@ input[type=color].form-control:disabled {
   .header-vue #sidebar-backdrop .sidebar-header-menu ul {
     flex-direction: row;
     list-style: none;
+    padding-top: 4px !important;
     padding-left: 6px !important;
     padding-right: 6px !important;
   }
 
   .header-vue #sidebar-backdrop .sidebar-header-menu ul li {
     text-align: center;
+    font-size: 13px;
+  }
+
+  .header-vue #sidebar-backdrop .sidebar-body .sidebar-menu ul {
+    flex-direction: row;
+    list-style: none;
+    padding-top: 4px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+
+  .header-vue #sidebar-backdrop .sidebar-body .sidebar-menu ul li {
+    font-size: 13px;
   }
 }
 
