@@ -23,6 +23,9 @@ require('./bootstrap');
 
 import AppHeader from './components/includes/Header.vue';
 Vue.component('app-header', AppHeader);
+
+import Slider from './components/slider/Slider.vue';
+Vue.component('slider', Slider);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

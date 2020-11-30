@@ -14310,8 +14310,94 @@ input[type=color].form-control:disabled {
 }
 
 @media (max-width: 768px) {
+  .header-vue .mobile-nav-menu-icon {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+  }
+
+  .header-vue .mobile-nav-menu-icon span#item-counter {
+    top: -5px;
+    right: -19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: #ffffe8;
+    border-radius: 50%;
+    position: absolute;
+    background: #00A9E2;
+    text-shadow: 1px 1px 0 #1c1c1c;
+    font: 300 normal 0.8em/1.8 "Roboto Slab";
+  }
+
+  .header-vue .mobile-nav-menu-icon span#item-counter:before {
+    top: 18px;
+    width: 0px;
+    height: 0px;
+    right: 11px;
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 8px 6px 0 0;
+    transform: rotate(24deg);
+    border-color: #00A9E2 transparent transparent transparent;
+  }
+
+  .header-vue .mobile-nav-menu-icon .mob-cart-btn {
+    position: relative;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .header-vue .mobile-nav-menu-icon .mob-search-btn {
+    margin-right: 16px;
+  }
+
+  .header-vue .mobile-nav-menu-icon .modal-dialog {
+    height: 100%;
+    margin: auto;
+  }
+
+  .header-vue .mobile-nav-menu-icon .modal-dialog .modal-content {
+    height: 100%;
+  }
+
+  .header-vue .mobile-nav-menu-icon .modal-dialog .modal-content .modal-header {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .header-vue .mobile-nav-menu-icon .modal-dialog .modal-content .modal-header .input-group button.close:focus {
+    outline: 0 !important;
+  }
+
+  .header-vue .mobile-nav-menu-icon .modal-dialog .modal-content .modal-header .input-group .mob-search-inputbox {
+    border: none;
+  }
+
+  .header-vue .mobile-nav-menu-icon .modal-dialog .modal-content .modal-header .input-group .mob-search-inputbox:focus {
+    outline: 0 !important;
+  }
+
   .header-vue .desk-menu {
     display: none;
+  }
+
+  .header-vue .navbar {
+    display: inline-block !important;
+  }
+
+  .header-vue .navbar .for-mob-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-vue .navbar .for-mob-header button.navbar-toggler {
+    height: 43px;
   }
 
   .header-vue #sidebar-backdrop .b-sidebar-header {
@@ -14361,6 +14447,10 @@ input[type=color].form-control:disabled {
     font-size: 13px;
   }
 
+  .header-vue #sidebar-backdrop .sidebar-header-menu ul li a {
+    color: black;
+  }
+
   .header-vue #sidebar-backdrop .sidebar-body .sidebar-menu ul {
     flex-direction: row;
     list-style: none;
@@ -14375,6 +14465,10 @@ input[type=color].form-control:disabled {
 }
 
 @media (min-width: 769px) {
+  .header-vue .mobile-nav-menu-icon {
+    display: none;
+  }
+
   .header-vue .desk-menu {
     display: block;
   }
@@ -14462,6 +14556,26 @@ input[type=color].form-control:disabled {
 
   .menu-container .navbar .nav-item .dropdown-menu {
     margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
   }
 }
 

@@ -8,8 +8,92 @@
 }
 @media (max-width: $medium) {
 	.header-vue{
+		.mobile-nav-menu-icon{
+			display: flex;
+			flex-direction: row;
+			font-size: 20px;
+			span#item-counter {    
+				top: -5px;
+				right: -19px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 20px;
+				height: 20px;
+				text-align: center;
+				color: #ffffe8;
+				border-radius: 50%;
+				position: absolute;
+				background: $color-primary;
+				text-shadow: 1px 1px 0 #1c1c1c;
+				font: 300 normal 0.8em/1.8 'Roboto Slab';
+				// -webkit-box-shadow: 0 0 0 1px rgba(22,22,22,0.8);
+				// box-shadow: 0 0 0 1px rgba(22,22,22,0.8);
+				// background: -webkit-linear-gradient(-45deg, #c80724 0%, #bf011b 50%, #9f0118 100%);
+				// background: -moz-linear-gradient(-45deg, #c80724 0%, #bf011b 50%, #9f0118 100%);
+				// background: -o-linear-gradient(-45deg, #c80724 0%, #bf011b 50%, #9f0118 100%);
+				// background: linear-gradient(-45deg, #c80724 0%, #bf011b 50%, #9f0118 100%);
+			}
+			span#item-counter:before {
+				top: 18px;
+				width: 0px;
+				height: 0px;
+				right: 11px;
+				content: '';
+				position: absolute;
+				border-style: solid;
+				border-width: 8px 6px 0 0;
+				-webkit-transform: rotate(24deg);
+				-moz-transform: rotate(24deg);
+				transform: rotate(24deg);
+				border-color: $color-primary transparent transparent transparent;
+			}
+			.mob-cart-btn{
+				position: relative;
+				margin-left: 16px;
+				margin-right: 16px;
+			}
+			.mob-search-btn{
+				margin-right: 16px;
+			}
+			.modal-dialog{
+				height: 100%;
+				margin: auto;
+				.modal-content{
+					height: 100%;
+					.modal-header{
+						padding-left: 0!important;
+						padding-right: 0!important;
+						.input-group{
+							button.close{
+								&:focus{
+									outline: 0!important;
+								}
+							}
+							.mob-search-inputbox{
+								border: none;
+								&:focus{
+									outline: 0!important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 		.desk-menu{
 			display: none;
+		}
+		.navbar {
+			display: inline-block!important;
+			.for-mob-header{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				button.navbar-toggler{
+					height: 43px;
+				}
+			}
 		}
 		#sidebar-backdrop{
 			.b-sidebar-header{
@@ -51,6 +135,9 @@
 					li{
 						text-align: center;
 						font-size: 13px;
+						a{
+							color: black;
+						}
 					}
 				}
 			}
@@ -78,6 +165,9 @@
 }
 @media (min-width: $medium+1) {
 	.header-vue{
+		.mobile-nav-menu-icon{
+			display: none;
+		}
 		.desk-menu{
 			display: block;
 		}

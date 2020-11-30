@@ -1,0 +1,23 @@
+// Variables
+@import 'variables';
+
+// mobile device
+@media (max-width: $medium) {
+	.desktop{
+		display: none;
+	}
+	.mobile{
+		display: block;
+	}
+}
+
+// desktop or large device
+@media (min-width: $medium+1) {
+	.mobile{
+		display: none;
+	}
+	.desktop{
+		display: block;
+	}
+}
+

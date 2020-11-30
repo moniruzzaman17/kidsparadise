@@ -80,9 +80,44 @@
 <div>
 	<div class="header-vue">
 		<b-navbar toggleable="lg" class="container">
-			<b-navbar-toggle v-b-toggle.sidebar-backdrop target="nav-collapse"></b-navbar-toggle>
-			<b-navbar-brand :to="{name: 'home'}" class="nav-brand-anchor"><img class="w-100" src="/img/logo.gif" alt=""></b-navbar-brand>
-
+			<div class="for-mob-header">
+				<div class="for-mob-brand">
+					<b-navbar-toggle v-b-toggle.sidebar-backdrop target="nav-collapse"></b-navbar-toggle>
+					<b-navbar-brand :to="{name: 'home'}" class="nav-brand-anchor"><img class="w-100" src="/img/logo.gif" alt=""></b-navbar-brand>
+				</div>
+				<b-navbar-nav class="navbar-menu mobile-nav-menu-icon d-md-none d-lg-none d-xl-none">
+					<b-nav-item href="#" data-toggle="modal" data-target="#searchModal" class="mob-search-btn"><i class="fa fa-search text-grey" aria-hidden="true"></i></b-nav-item>
+					<!-- Modal -->
+					<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<form action="" method="POST">
+									<div class="modal-header">
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<button type="button" class="close input-group-text" data-dismiss="modal" aria-label="Close">
+													<!-- <span aria-hidden="true">&#8592;</span> -->
+													<i class="fas fa-arrow-left"></i>
+												</button>
+											</div>
+											<input type="text" class="form-control mob-search-inputbox" placeholder="Search for products, brands and more" aria-label="Username" aria-describedby="back-left">
+										</div>
+									</div>
+									<div class="modal-body">
+										...
+									</div>
+									<!-- <div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary">Save changes</button>
+									</div> -->
+								</form>
+							</div>
+						</div>
+					</div>
+					<b-nav-item href="#" ><i class="far fa-heart"></i></b-nav-item>
+					<b-nav-item href="#" class="mob-cart-btn"><i class="fas fa-shopping-cart"></i><span id="item-counter" style="font-weight: 400;">2</span></b-nav-item>
+				</b-navbar-nav>
+			</div>
 			<div class="desk-menu w-100">
 				<!-- Right aligned nav items -->
 				<b-navbar-nav class="w-100 d-flex align-items-center">
@@ -186,9 +221,6 @@
 					<ul>
 						<li>
 							<a href=""><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-						</li>
-						<li>
-							ABOUT US
 						</li>
 					</ul>
 				</div>

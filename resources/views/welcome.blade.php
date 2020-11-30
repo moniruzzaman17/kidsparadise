@@ -4,10 +4,7 @@
 
 <div class="flex-center position-ref full-height">
     <div class="content">
-        <div class="title m-b-md">
-            Kidsparadise
-        </div>
-
+    	<slider></slider>
         <div class="links">
             <router-view></router-view>
         </div>
