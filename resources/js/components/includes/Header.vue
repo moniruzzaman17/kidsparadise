@@ -140,7 +140,7 @@
 				</b-navbar-nav>
 			</div>
 		</b-navbar>
-		<div class="menu-container desk-menu w-100">
+		<div class="menu-container desk-menu w-100 position-relative">
 			<div class="container">
 				<nav class="navbar navbar-expand-lg navbar-dark">
 					<div class="" id="main_nav">
