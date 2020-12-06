@@ -135,7 +135,7 @@
 						<b-nav-item href="#" >Support</b-nav-item>
 						<b-nav-item href="#" >Login/Register</b-nav-item>
 						<b-nav-item href="#" ><i class="far fa-heart"></i> Shortlist</b-nav-item>
-						<b-nav-item href="#" ><i class="fas fa-shopping-cart"></i> Cart<span class="count">0</span></b-nav-item>
+						<b-nav-item href="#" ><i class="fas fa-shopping-cart"></i> Cart<span id="item-counter" style="font-weight: 400;">2</span></b-nav-item>
 					</b-navbar-nav>
 				</b-navbar-nav>
 			</div>
