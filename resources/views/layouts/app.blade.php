@@ -19,7 +19,6 @@
 </head>
 <body>
     <div id="app">
-        <app-header></app-header>
         <main class="main">
             @yield('content')
         </main>

@@ -14847,3 +14847,7 @@ body {
   left: -4px;
 }
 
+.bottom-block-body .bottom-brand-banner-col .owl-carousel {
+  padding-left: 75px;
+}
+

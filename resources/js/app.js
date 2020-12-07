@@ -25,11 +25,11 @@ require('./bootstrap');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 
-import AppHeader from './components/includes/Header.vue';
-Vue.component('app-header', AppHeader);
+// import AppHeader from './components/includes/Header.vue';
+// Vue.component('app-header', AppHeader);
 
-import Slider from './components/slider/Slider.vue';
-Vue.component('slider', Slider);
+// import Slider from './components/slider/Slider.vue';
+// Vue.component('slider', Slider);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

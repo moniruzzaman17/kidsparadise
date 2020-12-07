@@ -7,6 +7,7 @@ import BootstrapVue from 'bootstrap-vue'
 Vue.use(BootstrapVue);
 
 import Home from'../components/Home.vue';
+import Login from'../components/auth/Login.vue';
 
 const routes = new VueRouter({
 	mode: 'history',
@@ -15,6 +16,11 @@ const routes = new VueRouter({
 			path: '/',
 			component: Home,
 			name: 'home',
+		},
+		{
+			path: '/customer/login',
+			component: Login,
+			name: 'login',
 		}
 	]
 });

@@ -133,7 +133,7 @@
 					<b-navbar-nav class="w-100 navbar-menu d-flex justify-content-end">
 						<b-nav-item href="#">Track Order</b-nav-item>
 						<b-nav-item href="#" >Support</b-nav-item>
-						<b-nav-item href="#" >Login/Register</b-nav-item>
+						<b-nav-item :to="{name: 'login'}" >Login/Register</b-nav-item>
 						<b-nav-item href="#" ><i class="far fa-heart"></i> Shortlist</b-nav-item>
 						<b-nav-item href="#" ><i class="fas fa-shopping-cart"></i> Cart<span id="item-counter" style="font-weight: 400;">2</span></b-nav-item>
 					</b-navbar-nav>

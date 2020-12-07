@@ -12,10 +12,10 @@
 				<div class="bottom-block">
 					<div class="row w-100 text-center m-auto banner-block">
 						<div class="col-12 col-sm-12 col-sm-12 col-ls-12 col-xl-12 bottom-brand-banner-col p-0">
-							<div class="top-brand-bg" style="height: 80px; background-color: yellow;">
+							<div class="top-brand-bg" style="height: 80px;">
 								
 							</div>
-							<carousel :items="10" :loop="true" :autoplay="true" :autoplayTimeout="5000" :autoplaySpeed="1000" :autoplayHoverPause="false" :nav="false" :dots="false" >
+							<carousel :responsive="{0:{items:3,nav:false},700:{items:8,nav:false}}" :items="6" :loop="true" :autoplay="true" :autoplayTimeout="5000" :autoplaySpeed="1000" :autoplayHoverPause="false" :nav="false" :dots="false" >
 								<a href=""><img class="img-fluid" src="/medias/brands/chicco-logo.webp"></a>
 								<a href=""><img class="img-fluid" src="/medias/brands/chicco-logo.webp"></a>
 								<a href=""><img class="img-fluid" src="/medias/brands/chicco-logo.webp"></a>
