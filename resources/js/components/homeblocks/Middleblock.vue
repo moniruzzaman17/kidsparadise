@@ -8,10 +8,10 @@
 					</div>
 					<div class="row w-100 text-center m-auto">
 						<div class="col-12 col-sm-12 col-sm-6 col-ls-6 col-xl-6 two-banner-col">
-							<a href=""><img class="w-100" src="/medias/mid-top-banner.webp" alt=""></a>
+							<a href=""><img class="w-100 h-100" src="/medias/mid-top-banner.webp" alt=""></a>
 						</div>
 						<div class="col-12 col-sm-12 col-sm-6 col-ls-6 col-xl-6 two-banner-col">
-							<a href=""><img class="w-100" src="/medias/mid-top-banner.webp" alt=""></a>
+							<a href=""><img class="w-100 h-100" src="/medias/mid-top-banner.webp" alt=""></a>
 						</div>
 					</div>
 				</div>
@@ -21,13 +21,13 @@
 					</div>
 					<div class="row w-100 text-center m-auto">
 						<div class="col-12 col-sm-12 col-sm-4 col-ls-4 col-xl-4 three-banner-col">
-							<a href=""><img class="w-100" src="/medias/three-banner.webp" alt=""></a>
+							<a href=""><img class="w-100 h-100" src="/medias/three-banner.webp" alt=""></a>
 						</div>
 						<div class="col-12 col-sm-12 col-sm-4 col-ls-4 col-xl-4 three-banner-col">
-							<a href=""><img class="w-100" src="/medias/three-banner.webp" alt=""></a>
+							<a href=""><img class="w-100 h-100" src="/medias/three-banner.webp" alt=""></a>
 						</div>
 						<div class="col-12 col-sm-12 col-sm-4 col-ls-4 col-xl-4 three-banner-col">
-							<a href=""><img class="w-100" src="/medias/three-banner.webp" alt=""></a>
+							<a href=""><img class="w-100 h-100" src="/medias/three-banner.webp" alt=""></a>
 						</div>
 					</div>
 				</div>

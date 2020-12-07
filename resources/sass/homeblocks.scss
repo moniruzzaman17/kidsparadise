@@ -6,7 +6,7 @@
 .block-title-bar{
 	display: inline-block;
 	padding-top: 30px;
-    padding-bottom: 15px;
+	padding-bottom: 15px;
 	h5{
 		font-size: 18px;
 		color: #363636;
@@ -187,6 +187,9 @@
 	.two-banner-col{
 
 	}
+	.container{
+		margin-bottom: 20px;
+	}
 }
 
 // mobile
@@ -219,12 +222,60 @@
 		.three-banner-col{
 			padding-right: 5px;
 			padding-left: 5px;
-			&:nth-child(n) {
+			&:first-child {
 				padding-left: 0px;
+			}
+			&:nth-child(n) {
+				// padding-left: 0px;
 			}
 			&:nth-child(3n) {
 				padding-right: 0px;
 			}
 		}
+	}
+}
+
+
+// bottom block
+.bottom-block-body{
+	line-height: 1;
+	background-image: url('/img/kids-bg.jpg');
+	background-repeat: repeat;
+	font-size: 12px;
+	.banner-block{
+		margin-top: 30px;
+	}
+	.bottom-block{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.bottom-brand-banner-col{
+		.top-brand-bg {
+			background: url('/medias/img/top-brand-bg.webp');
+			background-repeat: no-repeat;
+			height: 60px;
+			/* background-color: yellow; */
+			width: 92px;
+			/* background: white; */
+			background-color: transparent;
+			position: absolute;
+			z-index: 9;
+			top: -11px;
+			left: -4px;
+		}
+	}
+}
+
+// mobile
+@media (max-width: $medium) {
+	.bottom-block-body{
+
+	}
+}
+
+// desktop
+@media (min-width: $medium+1) {
+	.bottom-block-body{
+
 	}
 }

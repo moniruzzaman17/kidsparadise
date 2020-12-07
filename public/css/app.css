@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css);@import url(https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css);@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js);@import url(https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
@@ -14774,6 +14774,10 @@ body {
   background: #fff;
 }
 
+.middle-block-body .container {
+  margin-bottom: 20px;
+}
+
 @media (max-width: 768px) {
   .middle-block-body .two-banner-col {
     padding-right: 0px;
@@ -14804,12 +14808,42 @@ body {
     padding-left: 5px;
   }
 
-  .middle-block-body .three-banner-col:nth-child(n) {
+  .middle-block-body .three-banner-col:first-child {
     padding-left: 0px;
   }
 
   .middle-block-body .three-banner-col:nth-child(3n) {
     padding-right: 0px;
   }
+}
+
+.bottom-block-body {
+  line-height: 1;
+  background-image: url("/img/kids-bg.jpg");
+  background-repeat: repeat;
+  font-size: 12px;
+}
+
+.bottom-block-body .banner-block {
+  margin-top: 30px;
+}
+
+.bottom-block-body .bottom-block {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.bottom-block-body .bottom-brand-banner-col .top-brand-bg {
+  background: url("/medias/img/top-brand-bg.webp");
+  background-repeat: no-repeat;
+  height: 60px;
+  /* background-color: yellow; */
+  width: 92px;
+  /* background: white; */
+  background-color: transparent;
+  position: absolute;
+  z-index: 9;
+  top: -11px;
+  left: -4px;
 }
 
