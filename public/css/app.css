@@ -14851,3 +14851,27 @@ body {
   padding-left: 75px;
 }
 
+.footer-wrapper .icon-info-wrapper .container {
+  padding-top: 25px;
+}
+
+.footer-wrapper .icon-info-wrapper .container .icon-row .icon-col {
+  display: inline-block;
+}
+
+.footer-wrapper .icon-info-wrapper .container .icon-row .icon-col:hover {
+  cursor: pointer;
+}
+
+.footer-wrapper .icon-info-wrapper .container .icon-row .icon-col:hover .icon-info-title {
+  color: #6eacae !important;
+}
+
+.footer-wrapper .icon-info-wrapper .container .icon-row .icon-col .icon-img {
+  width: 40px;
+}
+
+.footer-wrapper .footer-middle .middle-row .middle-col .company-info ul li {
+  list-style: none;
+}
+

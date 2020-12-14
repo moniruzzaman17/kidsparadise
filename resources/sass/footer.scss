@@ -1,0 +1,48 @@
+.footer-wrapper{
+	.icon-info-wrapper{
+		.container{
+			padding-top: 25px;
+			.icon-row{
+				.icon-col{
+					display: inline-block;
+					&:hover{
+						cursor: pointer;
+						.icon-info-title{
+							color: #6eacae!important;
+						}
+					}
+					.icon-img{
+						width: 40px;
+					}
+				}
+			}
+		}
+	}
+	.footer-middle{
+		.middle-row{
+			.middle-col{
+				.company-info{
+					ul{
+						li{
+							list-style: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// mobile
+@media (max-width: $medium) {
+	.footer-wrapper{
+
+	}
+}
+
+// desktop
+@media (min-width: $medium+1) {
+	.footer-wrapper{
+
+	}
+}

@@ -12,6 +12,9 @@ global.jQuery = jQuery
 global.$ =jQuery
 require('./bootstrap');
 
+import ScrollFixedHeader from 'vuejs-scroll-fixed-header';
+Vue.use(ScrollFixedHeader);
+
 
 /**
  * The following block of code may be used to automatically register your

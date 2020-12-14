@@ -5,16 +5,19 @@
         <topblock/>
         <middleblock/>
         <bottomblock/>
+        <appFooter/>
     </div>
 </template>
 
 <script>
-import appHeader from './includes/Header.vue'
+import appHeader from './includes/Header'
 
-import slider from './slider/Slider.vue'
+import slider from './slider/Slider'
 import topblock from './homeblocks/Topblock'
 import middleblock from './homeblocks/Middleblock'
 import bottomblock from './homeblocks/Bottomblock'
+
+import appFooter from './includes/Footer'
 export default {
     mounted() {
         console.log('Home Component mounted.')
@@ -25,7 +28,8 @@ export default {
         slider,
         topblock,
         middleblock,
-        bottomblock 
+        bottomblock,
+        appFooter
     }
 }
 </script>

@@ -32,6 +32,7 @@
         "bootstrap-vue": "^2.19.0",
         "vue-owl-carousel": "^2.0.3",
         "vue-router": "^3.4.9",
-        "vue-slick-carousel": "^1.0.6"
+        "vue-slick-carousel": "^1.0.6",
+        "vuejs-scroll-fixed-header": "^1.0.3"
     }
 }
