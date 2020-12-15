@@ -19,17 +19,73 @@
 		}
 	}
 	.footer-middle{
+		margin-top: 60px;
 		.middle-row{
 			.middle-col{
-				.company-info{
+				font-size: 12px;
+				.company-info, .supports, .my-account{
 					ul{
+						padding: 0;
 						li{
 							list-style: none;
+							a{
+								color: #333e48
+							}
+						}
+					}
+				}
+			}
+			.social-col{
+				.social-connect{
+					.socialbtns{
+						ul{
+							padding: 0;
+							li{
+								list-style: none;
+								margin-left: 5px;
+								a{
+									background: #575757;
+									border-radius: 4px;
+									color: #D9F3F4;
+									padding: 3px;
+									width: 30px;
+									height: 30px;
+									display: inline-block;
+									display: flex;
+									justify-content: center;
+									align-items: center;
+									&:hover{
+										text-decoration: none;
+									}
+									i{
+										font-size: 20px;
+									}
+								}
+								.facebook{
+									&:hover{
+										background: #4060A5;
+										color: #fff;
+										text-decoration: none;
+									}
+								}
+								.youtube{
+									&:hover{
+										background: red;
+										color: #fff;
+										text-decoration: none;
+									}
+								}
+							}
 						}
 					}
 				}
 			}
 		}
+	}
+	.copyright{
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 }
 

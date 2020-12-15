@@ -14871,7 +14871,77 @@ body {
   width: 40px;
 }
 
-.footer-wrapper .footer-middle .middle-row .middle-col .company-info ul li {
+.footer-wrapper .footer-middle {
+  margin-top: 60px;
+}
+
+.footer-wrapper .footer-middle .middle-row .middle-col {
+  font-size: 12px;
+}
+
+.footer-wrapper .footer-middle .middle-row .middle-col .company-info ul,
+.footer-wrapper .footer-middle .middle-row .middle-col .supports ul,
+.footer-wrapper .footer-middle .middle-row .middle-col .my-account ul {
+  padding: 0;
+}
+
+.footer-wrapper .footer-middle .middle-row .middle-col .company-info ul li,
+.footer-wrapper .footer-middle .middle-row .middle-col .supports ul li,
+.footer-wrapper .footer-middle .middle-row .middle-col .my-account ul li {
   list-style: none;
+}
+
+.footer-wrapper .footer-middle .middle-row .middle-col .company-info ul li a,
+.footer-wrapper .footer-middle .middle-row .middle-col .supports ul li a,
+.footer-wrapper .footer-middle .middle-row .middle-col .my-account ul li a {
+  color: #333e48;
+}
+
+.footer-wrapper .footer-middle .middle-row .social-col .social-connect .socialbtns ul {
+  padding: 0;
+}
+
+.footer-wrapper .footer-middle .middle-row .social-col .social-connect .socialbtns ul li {
+  list-style: none;
+  margin-left: 5px;
+}
+
+.footer-wrapper .footer-middle .middle-row .social-col .social-connect .socialbtns ul li a {
+  background: #575757;
+  border-radius: 4px;
+  color: #D9F3F4;
+  padding: 3px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-wrapper .footer-middle .middle-row .social-col .social-connect .socialbtns ul li a:hover {
+  text-decoration: none;
+}
+
+.footer-wrapper .footer-middle .middle-row .social-col .social-connect .socialbtns ul li a i {
+  font-size: 20px;
+}
+
+.footer-wrapper .footer-middle .middle-row .social-col .social-connect .socialbtns ul li .facebook:hover {
+  background: #4060A5;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-wrapper .footer-middle .middle-row .social-col .social-connect .socialbtns ul li .youtube:hover {
+  background: red;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-wrapper .copyright {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
