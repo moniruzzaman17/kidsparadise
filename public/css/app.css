@@ -14945,3 +14945,89 @@ body {
   padding-bottom: 10px;
 }
 
+.login-pre .head img {
+  width: 110px;
+}
+
+.login-pre .login-wrapper {
+  max-width: 350px;
+  padding-top: 17px;
+}
+
+.login-pre .login-wrapper .login-pre-body .login-header {
+  font-size: 18px;
+  color: #424242;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.login-pre .login-wrapper .login-pre-body .login-pre-form .emailORphoneINPUT {
+  width: 100%;
+  background-color: #fff;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #a6a6a6;
+  margin: 5px 0;
+  line-height: 30px;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.login-pre .login-wrapper .login-pre-body .login-pre-form .emailORphoneINPUT:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.login-pre .login-wrapper .login-pre-body .login-pre-form .action-button {
+  background-color: #00A9E2;
+  cursor: pointer;
+  border-radius: 3px;
+  margin: 35px 0 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.login-pre .login-wrapper .login-pre-body .login-pre-form .action-button:hover {
+  background-color: #0153B4;
+  color: white;
+  font-weight: bold;
+}
+
+.login-pre .login-wrapper .login-pre-body .continue-with {
+  text-align: center;
+  font-size: 12px;
+}
+
+.login-pre .login-wrapper .login-pre-body .social-action {
+  display: flex;
+  justify-content: space-around;
+}
+
+.login-pre .login-wrapper .login-pre-body .social-action .social-login-fb,
+.login-pre .login-wrapper .login-pre-body .social-action .social-login-gm {
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 6px 18px;
+}
+
+.login-pre .login-wrapper .login-pre-body .register-new {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #2979ff;
+}
+
+.login-pre .login-wrapper .login-pre-body .agree-text {
+  margin-top: 25px;
+  border-top: 1px solid #e0e0e0;
+  padding: 15px 0 0;
+  font-size: 12px;
+  color: #424242;
+  line-height: 17px;
+}
+

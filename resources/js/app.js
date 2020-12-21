@@ -12,6 +12,8 @@ global.jQuery = jQuery
 global.$ =jQuery
 require('./bootstrap');
 
+window.axios = require('axios');
+
 import ScrollFixedHeader from 'vuejs-scroll-fixed-header';
 Vue.use(ScrollFixedHeader);
 
