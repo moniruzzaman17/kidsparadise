@@ -30,18 +30,27 @@
 	</div>
 </template>
 <script>
-	export default {
-		data(){
-			return {
-				emailORphone: ''
-			}
-		},
-		methods:{
-			checkLoginID(){
-				axios.post('./checkloginpre',{
-					emailORphone : this.emailORphone
-				})
-			}
+export default {
+	data(){
+		return {
+			emailORphone: ''
+		}
+	},
+	mounted(){
+
+	},
+	methods:{
+		checkLoginID(){
+			axios.post('checkloginpre', {
+				emailORphone: 'emailORphone'
+			})
+			.then(function (response) {
+				console.log(response);
+			})
+			.catch(function (error) {
+				console.log(error);
+			});
 		}
 	}
+}
 </script>
