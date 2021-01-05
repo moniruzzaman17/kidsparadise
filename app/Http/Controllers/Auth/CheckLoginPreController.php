@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
+use App\Customer;
 class CheckLoginPreController extends Controller
 {
     /**
@@ -35,7 +35,23 @@ class CheckLoginPreController extends Controller
      */
     public function store(Request $request)
     {
-        dd('working');
+    	$Messages = [
+    		'mobile.required' => 'Mobile number field is required',
+    		'mobile.regex' => 'Mobile number starts with 01 and is followed by 9 numbers',
+    	];
+
+    	$validatedData = $request->validate([
+    		'mobile' => 'required|regex:/(01)[0-9]{9}$/',
+	    ],$Messages);
+
+    	$customer = Customer::where('phone',request('mobile'))->first();
+    	if ($customer) {
+    		$checked = true;
+    	}
+    	else {
+    		$checked = false;
+    	}
+        return response()->json($checked);
     }
 
     /**

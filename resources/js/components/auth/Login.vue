@@ -10,8 +10,11 @@
 					<h5 class="login-header">Login/Register</h5>
 					<form action="" class="login-pre-form" method="POST" @submit.prevent="checkLoginID()">
 						<div class="form-group">
-							<label for="emailORphone">Email ID/Phone No.</label>
-							<input type="text" v-model="emailORphone" class="form-control emailORphoneINPUT" id="emailORphone" placeholder="Enter your Email ID or Mobile No.">
+							<label for="mobile">Mobile No.</label>
+							<input type="text" v-model="mobile" class="form-control emailORphoneINPUT" id="mobile" placeholder="Enter your valid mobile no.">
+							<div class="invalid-feedback d-block">
+								{{errors.get('mobile')}}
+							</div>
 						</div>
 						<div class="form-group">
 							<input type="submit" class="action-button btn form-control" value="Continue">
@@ -30,10 +33,27 @@
 	</div>
 </template>
 <script>
+class Errors{
+	constructor(){
+		this.errors = {};
+	}
+
+	get(field){
+		if (this.errors[field]) {
+			return this.errors[field][0];
+		}
+	}
+
+	record(errors){
+		this.errors = errors.errors;
+	}
+}
+
 export default {
 	data(){
 		return {
-			emailORphone: ''
+			mobile: '',
+			errors: new Errors()
 		}
 	},
 	mounted(){
@@ -41,15 +61,19 @@ export default {
 	},
 	methods:{
 		checkLoginID(){
-			axios.post('checkloginpre', {
-				emailORphone: 'emailORphone'
+			axios.post('/api/checkloginpre', {
+				mobile: this.mobile
 			})
 			.then(function (response) {
 				console.log(response);
+				if (response == true) {
+					this.$router.push({path:'/home'});
+				}
+				else {
+					this.$router.go('/login');
+				}
 			})
-			.catch(function (error) {
-				console.log(error);
-			});
+			.catch(error => this.errors.record(error.response.data));
 		}
 	}
 }
