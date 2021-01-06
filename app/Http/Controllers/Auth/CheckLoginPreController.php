@@ -47,11 +47,16 @@ class CheckLoginPreController extends Controller
     	$customer = Customer::where('phone',request('mobile'))->first();
     	if ($customer) {
     		$checked = true;
+    		$number = request('mobile');
+    		$name = $customer->name;
     	}
     	else {
     		$checked = false;
+    		$number = request('mobile');
+    		$name = '';
     	}
-        return response()->json($checked);
+    	$data = [$checked,$number,$name];
+        return response()->json($data);
     }
 
     /**

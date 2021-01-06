@@ -2,7 +2,9 @@
 @import 'variables';
 
 body{
-	background: #fff;
+	background-image: url("img/kids-bg.jpg");
+	background-repeat: repeat;
+	background-color: #fff;
 	color: #333e48;
 	font-family: roboto,sans-serif;
 	font-size: 14px;
@@ -13,11 +15,35 @@ body{
 	overflow-x: hidden;
 }
 
+.action-button {
+	background-color: #00A9E2;
+	cursor: pointer;
+	border-radius: 3px;
+	margin: 35px 0 10px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	color: white;
+	font-weight: bold;
+	font-style: normal;
+	&:hover{
+		background-color: #0153B4;
+		color: white;
+		font-weight: bold;
+		font-style: normal;
+	}
+}
+
 .header-vue{
+	background-color: #fff;
 	.nav-brand-anchor{
 		width: 100px;
 	}
 }
+.modal-backdrop {
+	z-index: -1;
+}
+
 
 @media (max-width: $medium) {
 	.header-vue{
@@ -25,7 +51,7 @@ body{
 			display: flex;
 			flex-direction: row;
 			font-size: 20px;
-			span#item-counter {    
+			span#mobCartItemCounter {    
 				top: -5px;
 				right: -19px;
 				display: flex;
@@ -46,20 +72,20 @@ body{
 				// background: -moz-linear-gradient(-45deg, #c80724 0%, #bf011b 50%, #9f0118 100%);
 				// background: -o-linear-gradient(-45deg, #c80724 0%, #bf011b 50%, #9f0118 100%);
 				// background: linear-gradient(-45deg, #c80724 0%, #bf011b 50%, #9f0118 100%);
-			}
-			span#item-counter:before {
-				top: 18px;
-				width: 0px;
-				height: 0px;
-				right: 11px;
-				content: '';
-				position: absolute;
-				border-style: solid;
-				border-width: 8px 6px 0 0;
-				-webkit-transform: rotate(24deg);
-				-moz-transform: rotate(24deg);
-				transform: rotate(24deg);
-				border-color: $color-primary transparent transparent transparent;
+				&:before {
+					top: 18px;
+					width: 0px;
+					height: 0px;
+					right: 11px;
+					content: '';
+					position: absolute;
+					border-style: solid;
+					border-width: 8px 6px 0 0;
+					-webkit-transform: rotate(24deg);
+					-moz-transform: rotate(24deg);
+					transform: rotate(24deg);
+					border-color: $color-primary transparent transparent transparent;
+				}
 			}
 			.mob-cart-btn{
 				position: relative;
@@ -259,5 +285,50 @@ body{
 		.navbar .nav-item:hover .nav-link{ color: #fff;  }
 		.navbar .nav-item:hover .dropdown-menu{ display: block; }
 		.navbar .nav-item .dropdown-menu{ margin-top:0; }
+
+	}
+
+	.cart-li{
+		.nav-link{
+			border-right: none!important;
+		}
+	}
+
+	span#cartItemCounter {   
+		font-size: 15px!important; 
+		top: 19px;
+		right: 5px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 23px;
+		height: 23px;
+		text-align: center;
+		color: #ffffe8;
+		border-radius: 50%;
+		position: absolute;
+		background: $color-primary;
+		text-shadow: 1px 1px 0 #1c1c1c;
+		font: 300 normal 0.8em/1.8 'Roboto Slab';
+		// -webkit-box-shadow: 0 0 0 1px rgba(22,22,22,0.8);
+		// box-shadow: 0 0 0 1px rgba(22,22,22,0.8);
+		// background: -webkit-linear-gradient(-45deg, #c80724 0%, #bf011b 50%, #9f0118 100%);
+		// background: -moz-linear-gradient(-45deg, #c80724 0%, #bf011b 50%, #9f0118 100%);
+		// background: -o-linear-gradient(-45deg, #c80724 0%, #bf011b 50%, #9f0118 100%);
+		// background: linear-gradient(-45deg, #c80724 0%, #bf011b 50%, #9f0118 100%);
+		&:before {
+			top: 22px;
+			width: 0px;
+			height: 0px;
+			right: 11px;
+			content: '';
+			position: absolute;
+			border-style: solid;
+			border-width: 8px 6px 0 0;
+			-webkit-transform: rotate(24deg);
+			-moz-transform: rotate(24deg);
+			transform: rotate(24deg);
+			border-color: $color-primary transparent transparent transparent;
+		}
 	}
 }

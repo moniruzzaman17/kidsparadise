@@ -1,6 +1,16 @@
 // Variables
 @import 'variables';
-
+.required{
+	&:after{
+		content: "*";
+		color: #e02b27;
+		font-size: 1rem!important;
+		margin: 0 0 0 5px!important;
+	}
+}
+input[type="text"], input[type="password"], input[type="email"]{
+	background: transparent!important;
+}
 .login-pre{
 	.head{
 		// overflow: hidden;
@@ -20,7 +30,7 @@
 				margin-bottom: 20px;
 			}
 			.login-pre-form{
-				.emailORphoneINPUT{
+				.emailORphoneINPUT, .inputBox{
 					width: 100%;
 					background-color: #fff;
 					height: 30px;

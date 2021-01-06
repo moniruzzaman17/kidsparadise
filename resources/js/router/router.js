@@ -7,7 +7,10 @@ import BootstrapVue from 'bootstrap-vue'
 Vue.use(BootstrapVue);
 
 import Home from'../components/Home.vue';
+import Prelogin from'../components/auth/Prelogin.vue';
 import Login from'../components/auth/Login.vue';
+import Register from'../components/auth/Register.vue';
+import Cart from'../components/cart/Cart.vue';
 
 const routes = new VueRouter({
 	mode: 'history',
@@ -18,9 +21,24 @@ const routes = new VueRouter({
 			name: 'home',
 		},
 		{
+			path: '/customer/pre-login',
+			component: Prelogin,
+			name: 'preLogin',
+		},
+		{
 			path: '/customer/login',
 			component: Login,
 			name: 'login',
+		},
+		{
+			path: '/customer/register',
+			component: Register,
+			name: 'register',
+		},
+		{
+			path: '/cart',
+			component: Cart,
+			name: 'cart',
 		}
 	]
 });

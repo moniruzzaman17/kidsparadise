@@ -7,17 +7,34 @@
 			</div>
 			<div class="container m-auto login-wrapper">
 				<div class="login-pre-body">
-					<h5 class="login-header">Login/Register</h5>
-					<form action="" class="login-pre-form" method="POST" @submit.prevent="checkLoginID()">
+					<h5 class="login-header">Login</h5>
+					<form action="" class="login-pre-form" method="POST" @submit.prevent="login()">
 						<div class="form-group">
-							<label for="mobile">Mobile No.</label>
-							<input type="text" v-model="mobile" class="form-control emailORphoneINPUT" id="mobile" placeholder="Enter your valid mobile no.">
+							<label for="logname" class="required">Full Name</label>
+							<input type="text" v-model="cusName" class="form-control inputBox" id="logname" placeholder="Enter your full name" readonly>
 							<div class="invalid-feedback d-block">
-								{{errors.get('mobile')}}
+								<!-- {{errors.get('cusName')}} -->
 							</div>
 						</div>
 						<div class="form-group">
-							<input type="submit" class="action-button btn form-control" value="Continue">
+							<label for="logmobile" class="required">Mobile No.</label>
+							<div style="display: flex;">
+								<input type="text" value="+88" class="form-control emailORphoneINPUT" id="logmobile" placeholder="Enter your valid mobile no." readonly style="width: 12%; margin-right: 15px;">
+								<input type="text" v-model="mobile" class="form-control emailORphoneINPUT" id="mobile" placeholder="Enter your valid mobile no." readonly>
+							</div>
+							<div class="invalid-feedback d-block">
+								<!-- {{errors.get('mobile')}} -->
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="logpass" class="required">Password</label>
+							<input type="password" v-model="cusPass" class="form-control inputBox" id="logpass" placeholder="Enter your password">
+							<div class="invalid-feedback d-block">
+								<!-- {{errors.get('cusEmail')}} -->
+							</div>
+						</div>
+						<div class="form-group">
+							<input type="submit" class="action-button btn form-control" value="Login">
 						</div>
 					</form>
 					<p class="continue-with">or Continue With</p>
@@ -33,47 +50,51 @@
 	</div>
 </template>
 <script>
-class Errors{
-	constructor(){
-		this.errors = {};
-	}
+	class Errors{
+		constructor(){
+			this.errors = {};
+		}
 
-	get(field){
-		if (this.errors[field]) {
-			return this.errors[field][0];
+		get(field){
+			if (this.errors[field]) {
+				return this.errors[field][0];
+			}
+		}
+
+		record(errors){
+			this.errors = errors.errors;
 		}
 	}
 
-	record(errors){
-		this.errors = errors.errors;
-	}
-}
-
-export default {
-	data(){
-		return {
-			mobile: '',
-			errors: new Errors()
-		}
-	},
-	mounted(){
-
-	},
-	methods:{
-		checkLoginID(){
-			axios.post('/api/checkloginpre', {
-				mobile: this.mobile
-			})
-			.then(function (response) {
-				console.log(response);
-				if (response == true) {
-					this.$router.push({path:'/home'});
+	export default {
+		data(){
+			return {
+				cusName: this.$route.params.name,
+				mobile: this.$route.params.mn,
+				cusEmail: '',
+				cusPass: ''
+			}
+		},
+		mounted(){
+		},
+		methods:{
+			login(){
+				if (this.mobile == '' || typeof this.mobile === 'undefined') {
+					this.$router.push({name:'preLogin'})
 				}
-				else {
-					this.$router.go('/login');
-				}
-			})
-			.catch(error => this.errors.record(error.response.data));
+			// axios.post('/api/checkloginpre', {
+			// 	mobile: this.mobile
+			// })
+			// .then((response) => {
+			// 	console.log(response.data);
+			// 	if (response.data == true) {
+			// 		this.$router.push({path:'/', params: { userId: '123' }})
+			// 	}
+			// 	else {
+			// 		this.failed = 'Number not matched'
+			// 	}
+			// })
+			// .catch(error => this.errors.record(error.response.data));
 		}
 	}
 }

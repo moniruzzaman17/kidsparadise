@@ -18,6 +18,13 @@ import ScrollFixedHeader from 'vuejs-scroll-fixed-header';
 Vue.use(ScrollFixedHeader);
 
 
+import VueMeta from 'vue-meta'
+ 
+Vue.use(VueMeta, {
+  // optional pluginOptions
+  refreshOnceOnNavigation: true
+})
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue

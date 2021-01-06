@@ -117,27 +117,31 @@
 						</div>
 					</div>
 					<b-nav-item href="#" ><i class="far fa-heart"></i></b-nav-item>
-					<b-nav-item href="#" class="mob-cart-btn"><i class="fas fa-shopping-cart"></i><span id="item-counter" style="font-weight: 400;">2</span></b-nav-item>
+					<b-nav-item :to="{name: 'cart'}" class="mob-cart-btn"><i class="fas fa-shopping-cart"></i><span id="mobCartItemCounter" style="font-weight: 400;">2</span></b-nav-item>
 				</b-navbar-nav>
 			</div>
 			<div class="desk-menu w-100">
 				<!-- Right aligned nav items -->
 				<b-navbar-nav class="w-100 d-flex align-items-center">
-					<b-nav-form class="w-100">
-						<!-- <b-form-input size="sm" class="mr-sm-2 serach-box" placeholder="Search"></b-form-input> -->
+					<!-- <b-nav-form class="w-100 desk-search-li">
+						<b-form-input size="sm" class="mr-sm-2 serach-box" placeholder="Search"></b-form-input>
+					</b-nav-form> -->
+					<li class="w-100">
+						<form action="">
 						<div class="input-group">
 							<input type="text" class="form-control serach-box" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
 							<div class="input-group-append serach-btn">
 								<span class="input-group-text search-icon" id="basic-addon2"><i class="fa fa-search text-grey" aria-hidden="true"></i></span>
 							</div>
 						</div>
-					</b-nav-form>
+						</form>
+					</li>
 					<b-navbar-nav class="w-100 navbar-menu d-flex justify-content-end">
 						<b-nav-item href="#">Track Order</b-nav-item>
 						<b-nav-item href="#" >Support</b-nav-item>
-						<b-nav-item :to="{name: 'login'}" >Login/Register</b-nav-item>
+						<b-nav-item :to="{name: 'preLogin'}" >Login/Register</b-nav-item>
 						<b-nav-item href="#" ><i class="far fa-heart"></i> Shortlist</b-nav-item>
-						<b-nav-item href="#" ><i class="fas fa-shopping-cart"></i> Cart<span id="item-counter" style="font-weight: 400;">2</span></b-nav-item>
+						<b-nav-item :to="{name: 'cart'}" class='cart-li'><i class="fas fa-shopping-cart"></i> Cart<span id="cartItemCounter" style="font-weight: 400;">10</span></b-nav-item>
 					</b-navbar-nav>
 				</b-navbar-nav>
 			</div>
@@ -262,6 +266,10 @@
 			// 		return false
 			// 	}
 			// }
+			jquery(){
+				// $("#searchModal").modal("show");
+				// $("#searchModal").css("z-index", "9");
+			}
 		}
 	}
 </script>
