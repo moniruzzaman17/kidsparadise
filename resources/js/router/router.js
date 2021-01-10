@@ -11,6 +11,7 @@ import Prelogin from'../components/auth/Prelogin.vue';
 import Login from'../components/auth/Login.vue';
 import Register from'../components/auth/Register.vue';
 import Cart from'../components/cart/Cart.vue';
+import CategoryPage from'../components/catalog/CategoryPage.vue';
 
 const routes = new VueRouter({
 	mode: 'history',
@@ -39,6 +40,11 @@ const routes = new VueRouter({
 			path: '/cart',
 			component: Cart,
 			name: 'cart',
+		},
+		{
+			path: '/category',
+			component: CategoryPage,
+			name: 'categorypage',
 		}
 	]
 });

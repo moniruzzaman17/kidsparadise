@@ -204,7 +204,7 @@
 								</div>
 							</li>
 							<li class="nav-item d-flex align-items-center" style="height: 50px;">
-								<a class="nav-link" href="#" data-toggle="dropdown"> BOY FASHION  </a>
+								<router-link class="nav-link" :to="{name: 'categorypage', query: {catName: 'Boy Fashion' }}" data-toggle="dropdown"> BOY FASHION  </router-link>
 								<div class="dropdown-menu">
 									<div class="row m-auto w-100">
 										<div class="col-md-8">
@@ -256,7 +256,7 @@
 								</div>
 							</li>
 							<li class="nav-item d-flex align-items-center" style="height: 50px;">
-								<a class="nav-link" href="#" data-toggle="dropdown">GIRL FASHION  </a>
+								<router-link class="nav-link" :to="{name: 'categorypage', query: {catName: 'GIRL Fashion' }}" data-toggle="dropdown"> GIRL FASHION  </router-link>
 								<div class="dropdown-menu">
 									<div class="row m-auto w-100">
 										<div class="col-md-8">
@@ -308,7 +308,7 @@
 								</div>
 							</li>
 							<li class="nav-item d-flex align-items-center" style="height: 50px;">
-								<a class="nav-link" href="#" data-toggle="dropdown">  FOOTWEAR  </a>
+								<router-link class="nav-link" :to="{name: 'categorypage', query: {catName: 'FOOTWEAR' }}" data-toggle="dropdown"> FOOTWEAR  </router-link>
 								<div class="dropdown-menu">
 									<div class="row m-auto w-100">
 										<div class="col-md-8">
@@ -410,7 +410,7 @@
 		data() {
 			return {
 				variant: 'dark',
-				fixed: true,
+				fixed: false,
 				variants: [
 				'transparent',
 				'white',
@@ -444,5 +444,6 @@
 <style>
 .scroll-fixed-header.is-fixed{
 	background-color: white;
+	transition: 1s;
 }
 </style>
