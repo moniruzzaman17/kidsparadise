@@ -14562,10 +14562,6 @@ body {
     height: 50px;
   }
 
-  .menu-container .product-menubar-ul li {
-    height: 50px;
-  }
-
   .menu-container .product-menubar-ul li a.nav-link {
     color: #575757 !important;
     height: 100%;
@@ -14578,11 +14574,40 @@ body {
     border-top: 4px solid #ffd91c;
   }
 
+  .menu-container .product-menubar-ul li .submenuBlock ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .menu-container .product-menubar-ul li .submenuBlock ul li a {
+    font-size: 13px;
+    color: #757575;
+    line-height: 18px;
+  }
+
+  .menu-container .product-menubar-ul li .submenuBlock ul li a:hover {
+    text-decoration: none;
+    color: black;
+  }
+
+  .menu-container .product-menubar-ul li .submenuBlock ul div.hborder {
+    width: 140px;
+    height: 1px;
+    margin: 12px 0;
+    background-color: #eaeaec;
+  }
+
   .menu-container .dropdown-menu {
     overflow-y: auto;
-    max-height: 400px;
+    max-height: 500px;
     right: 0;
     border-top: none;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+
+  .menu-container .dropdown-menu .category-pre-banner img {
+    width: 100%;
   }
 
   .menu-container .navbar .nav-item .dropdown-menu {

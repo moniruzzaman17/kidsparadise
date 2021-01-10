@@ -128,12 +128,12 @@
 					</b-nav-form> -->
 					<li class="w-100">
 						<form action="">
-						<div class="input-group">
-							<input type="text" class="form-control serach-box" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
-							<div class="input-group-append serach-btn">
-								<span class="input-group-text search-icon" id="basic-addon2"><i class="fa fa-search text-grey" aria-hidden="true"></i></span>
+							<div class="input-group">
+								<input type="text" class="form-control serach-box" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+								<div class="input-group-append serach-btn">
+									<span class="input-group-text search-icon" id="basic-addon2"><i class="fa fa-search text-grey" aria-hidden="true"></i></span>
+								</div>
 							</div>
-						</div>
 						</form>
 					</li>
 					<b-navbar-nav class="w-100 navbar-menu d-flex justify-content-end">
@@ -151,44 +151,212 @@
 				<nav class="navbar navbar-expand-lg navbar-dark">
 					<div class="" id="main_nav">
 						<ul class="navbar-nav product-menubar-ul">
-							<li class="nav-item d-flex align-items-center">
+							<li class="nav-item d-flex align-items-center" style="height: 50px;">
 								<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">  All Category  </a>
 								<div class="dropdown-menu">
-									<ul>
-										<li><a class="dropdown-item" href="#"> This is from more items</a></li>
-										<li><a class="dropdown-item" href="#"> This is from more All Category</a></li>
-										<li><a class="dropdown-item" href="#"> This is from more items</a></li>
-									</ul>
+									<div class="row m-auto w-100">
+										<div class="col-md-8">
+											<div class="col-one submenuBlock shop-by-category" style="width:205px; float: left;">
+												<h6>SHOP BY CATEGORY</h6>
+												<ul>
+													<li><a href="#">Sets & Suits</a></li>
+													<li><a href="#"> Shirt</a></li>
+													<li><a href="#"> Pant</a></li>
+													<div class="hborder"></div>
+												</ul>
+											</div>
+											<div class="col-one submenuBlock shop-by-category" style="width:205px; float: left;">
+												<h6>SHOP BY AGE</h6>
+												<ul>
+													<li><a href="#">1-3 Years</a></li>
+													<li><a href="#"> 4-6 Years</a></li>
+													<li><a href="#"> 7-10 Years</a></li>
+													<li><a href="#"> 11-14 Years</a></li>
+													<li><a href="#"> 15+ Years</a></li>
+													<div class="hborder"></div>
+												</ul>
+											</div>
+											<div class="col-one submenuBlock shop-by-category" style="width:205px; float: left;">
+												<h6>SHOP BY BRAND</h6>
+												<ul>
+													<li><a href="#">1-3 Years</a></li>
+													<li><a href="#"> 4-6 Years</a></li>
+													<li><a href="#"> 7-10 Years</a></li>
+													<li><a href="#"> 11-14 Years</a></li>
+													<li><a href="#"> 15+ Years</a></li>
+													<div class="hborder"></div>
+												</ul>
+												<h6>SHOP BY OCCASION</h6>
+												<ul>
+													<li><a href="#">1-3 Years</a></li>
+													<li><a href="#"> 4-6 Years</a></li>
+													<li><a href="#"> 7-10 Years</a></li>
+													<li><a href="#"> 11-14 Years</a></li>
+													<li><a href="#"> 15+ Years</a></li>
+													<div class="hborder"></div>
+												</ul>
+											</div>
+										</div>
+										<div class="col-md-4 category-pre-banner d-flex align-items-center">
+											<img src="medias/mtop1.webp" alt="">
+										</div>
+									</div>
 								</div>
 							</li>
-							<li class="nav-item d-flex align-items-center">
-								<a class="nav-link" href="#" data-toggle="dropdown"> Home  </a>
+							<li class="nav-item d-flex align-items-center" style="height: 50px;">
+								<a class="nav-link" href="#" data-toggle="dropdown"> BOY FASHION  </a>
 								<div class="dropdown-menu">
-									<ul>
-										<li><a class="dropdown-item" href="#"> This is from more Home</a></li>
-										<li><a class="dropdown-item" href="#"> This is from more Home</a></li>
-										<li><a class="dropdown-item" href="#"> This is from more Home</a></li>
-									</ul>
+									<div class="row m-auto w-100">
+										<div class="col-md-8">
+											<div class="col-one submenuBlock shop-by-category" style="width:205px; float: left;">
+												<h6>SHOP BY CATEGORY</h6>
+												<ul>
+													<li><a href="#">Sets & Suits</a></li>
+													<li><a href="#"> Shirt</a></li>
+													<li><a href="#"> Pant</a></li>
+													<div class="hborder"></div>
+												</ul>
+											</div>
+											<div class="col-one submenuBlock shop-by-category" style="width:205px; float: left;">
+												<h6>SHOP BY AGE</h6>
+												<ul>
+													<li><a href="#">1-3 Years</a></li>
+													<li><a href="#"> 4-6 Years</a></li>
+													<li><a href="#"> 7-10 Years</a></li>
+													<li><a href="#"> 11-14 Years</a></li>
+													<li><a href="#"> 15+ Years</a></li>
+													<div class="hborder"></div>
+												</ul>
+											</div>
+											<div class="col-one submenuBlock shop-by-category" style="width:205px; float: left;">
+												<h6>SHOP BY BRAND</h6>
+												<ul>
+													<li><a href="#">1-3 Years</a></li>
+													<li><a href="#"> 4-6 Years</a></li>
+													<li><a href="#"> 7-10 Years</a></li>
+													<li><a href="#"> 11-14 Years</a></li>
+													<li><a href="#"> 15+ Years</a></li>
+													<div class="hborder"></div>
+												</ul>
+												<h6>SHOP BY OCCASION</h6>
+												<ul>
+													<li><a href="#">1-3 Years</a></li>
+													<li><a href="#"> 4-6 Years</a></li>
+													<li><a href="#"> 7-10 Years</a></li>
+													<li><a href="#"> 11-14 Years</a></li>
+													<li><a href="#"> 15+ Years</a></li>
+													<div class="hborder"></div>
+												</ul>
+											</div>
+										</div>
+										<div class="col-md-4 category-pre-banner d-flex align-items-center">
+											<img src="https://cdn.fcglcdn.com/brainbees/images/n/eoss_20_drop_down_menu_fashion_boy.jpg" alt="">
+										</div>
+									</div>
 								</div>
 							</li>
-							<li class="nav-item d-flex align-items-center">
-								<a class="nav-link" href="#" data-toggle="dropdown">Service  </a>
+							<li class="nav-item d-flex align-items-center" style="height: 50px;">
+								<a class="nav-link" href="#" data-toggle="dropdown">GIRL FASHION  </a>
 								<div class="dropdown-menu">
-									<ul>
-										<li><a class="dropdown-item" href="#"> This is from more Service</a></li>
-										<li><a class="dropdown-item" href="#"> This is from more Service</a></li>
-										<li><a class="dropdown-item" href="#"> This is from more Service</a></li>
-									</ul>
+									<div class="row m-auto w-100">
+										<div class="col-md-8">
+											<div class="col-one submenuBlock shop-by-category" style="width:205px; float: left;">
+												<h6>SHOP BY CATEGORY</h6>
+												<ul>
+													<li><a href="#">Sets & Suits</a></li>
+													<li><a href="#"> Shirt</a></li>
+													<li><a href="#"> Pant</a></li>
+													<div class="hborder"></div>
+												</ul>
+											</div>
+											<div class="col-one submenuBlock shop-by-category" style="width:205px; float: left;">
+												<h6>SHOP BY AGE</h6>
+												<ul>
+													<li><a href="#">1-3 Years</a></li>
+													<li><a href="#"> 4-6 Years</a></li>
+													<li><a href="#"> 7-10 Years</a></li>
+													<li><a href="#"> 11-14 Years</a></li>
+													<li><a href="#"> 15+ Years</a></li>
+													<div class="hborder"></div>
+												</ul>
+											</div>
+											<div class="col-one submenuBlock shop-by-category" style="width:205px; float: left;">
+												<h6>SHOP BY BRAND</h6>
+												<ul>
+													<li><a href="#">1-3 Years</a></li>
+													<li><a href="#"> 4-6 Years</a></li>
+													<li><a href="#"> 7-10 Years</a></li>
+													<li><a href="#"> 11-14 Years</a></li>
+													<li><a href="#"> 15+ Years</a></li>
+													<div class="hborder"></div>
+												</ul>
+												<h6>SHOP BY OCCASION</h6>
+												<ul>
+													<li><a href="#">1-3 Years</a></li>
+													<li><a href="#"> 4-6 Years</a></li>
+													<li><a href="#"> 7-10 Years</a></li>
+													<li><a href="#"> 11-14 Years</a></li>
+													<li><a href="#"> 15+ Years</a></li>
+													<div class="hborder"></div>
+												</ul>
+											</div>
+										</div>
+										<div class="col-md-4 category-pre-banner d-flex align-items-center">
+											<img src="https://cdn.fcglcdn.com/brainbees/images/n/eoss_20_drop_down_menu_fashion_girl.jpg" alt="">
+										</div>
+									</div>
 								</div>
 							</li>
-							<li class="nav-item d-flex align-items-center">
-								<a class="nav-link" href="#" data-toggle="dropdown">  Fashions  </a>
+							<li class="nav-item d-flex align-items-center" style="height: 50px;">
+								<a class="nav-link" href="#" data-toggle="dropdown">  FOOTWEAR  </a>
 								<div class="dropdown-menu">
-									<ul>
-										<li><a class="dropdown-item" href="#"> This is from more Fashions</a></li>
-										<li><a class="dropdown-item" href="#"> This is from more Fashions</a></li>
-										<li><a class="dropdown-item" href="#"> This is from more Fashions</a></li>
-									</ul>
+									<div class="row m-auto w-100">
+										<div class="col-md-8">
+											<div class="col-one submenuBlock shop-by-category" style="width:205px; float: left;">
+												<h6>SHOP BY CATEGORY</h6>
+												<ul>
+													<li><a href="#">Sets & Suits</a></li>
+													<li><a href="#"> Shirt</a></li>
+													<li><a href="#"> Pant</a></li>
+													<div class="hborder"></div>
+												</ul>
+											</div>
+											<div class="col-one submenuBlock shop-by-category" style="width:205px; float: left;">
+												<h6>SHOP BY AGE</h6>
+												<ul>
+													<li><a href="#">1-3 Years</a></li>
+													<li><a href="#"> 4-6 Years</a></li>
+													<li><a href="#"> 7-10 Years</a></li>
+													<li><a href="#"> 11-14 Years</a></li>
+													<li><a href="#"> 15+ Years</a></li>
+													<div class="hborder"></div>
+												</ul>
+											</div>
+											<div class="col-one submenuBlock shop-by-category" style="width:205px; float: left;">
+												<h6>SHOP BY BRAND</h6>
+												<ul>
+													<li><a href="#">1-3 Years</a></li>
+													<li><a href="#"> 4-6 Years</a></li>
+													<li><a href="#"> 7-10 Years</a></li>
+													<li><a href="#"> 11-14 Years</a></li>
+													<li><a href="#"> 15+ Years</a></li>
+													<div class="hborder"></div>
+												</ul>
+												<h6>SHOP BY OCCASION</h6>
+												<ul>
+													<li><a href="#">1-3 Years</a></li>
+													<li><a href="#"> 4-6 Years</a></li>
+													<li><a href="#"> 7-10 Years</a></li>
+													<li><a href="#"> 11-14 Years</a></li>
+													<li><a href="#"> 15+ Years</a></li>
+													<div class="hborder"></div>
+												</ul>
+											</div>
+										</div>
+										<div class="col-md-4 category-pre-banner d-flex align-items-center">
+											<img src="https://cdn.fcglcdn.com/brainbees/images/n/eoss_20_drop_down_menu_fashion_footwear.jpg" alt="">
+										</div>
+									</div>
 								</div>
 							</li>
 						</ul>
@@ -274,7 +442,7 @@
 	}
 </script>
 <style>
-	.scroll-fixed-header.is-fixed{
-		background-color: white;
-	}
+.scroll-fixed-header.is-fixed{
+	background-color: white;
+}
 </style>

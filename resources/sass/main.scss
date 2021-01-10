@@ -258,7 +258,6 @@ body{
 		}
 		.product-menubar-ul{
 			li{
-				height: 50px;
 				a.nav-link{
 					color: #575757!important;
 					height: 100%;
@@ -272,13 +271,44 @@ body{
 						border-top: 4px solid #ffd91c;
 					}
 				}
+
+				.submenuBlock{
+					ul{
+						list-style: none;
+						padding: 0;
+						li{
+							a{
+								font-size: 13px;
+								color: #757575;
+								line-height: 18px;
+								&:hover{
+									text-decoration: none;
+									color: black;
+								}
+							}
+						}
+						div.hborder {
+							width: 140px;
+							height: 1px;
+							margin: 12px 0;
+							background-color: #eaeaec;
+						}
+					}
+				}
 			}
 		}
 		.dropdown-menu{
 			overflow-y: auto;
-			max-height: 400px;
+			max-height: 500px;
 			right: 0;
 			border-top: none;
+			border-top-right-radius: 0px;
+			border-top-left-radius: 0px;
+			.category-pre-banner{
+				img{
+					width: 100%;
+				}
+			}
 		}
 
 		.navbar .nav-item .dropdown-menu{ display: none; }
@@ -331,4 +361,5 @@ body{
 			border-color: $color-primary transparent transparent transparent;
 		}
 	}
+
 }
