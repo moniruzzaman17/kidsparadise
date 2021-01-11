@@ -38,6 +38,10 @@
 											zoom-width="400"
 											zoom-height="400"></image-magnifier>
 										</div>
+										<div class="action d-flex justify-content-between">
+											<router-link class="action-button" :to="{name: ''}" style="width: 46%">ADD TO CART</router-link>
+											<router-link class="action-button" :to="{name: ''}" style="width: 46%; border: 1px solid #bdbdbd; color: #616161; background: white;"><i class="far fa-heart" style="margin-left: 10px;"></i> SHORTLIST</router-link>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -56,17 +60,32 @@
 								</div>
 								<div class="middle-info">
 									<div class="attribute-color-wrapper">
-										<p class="d-flex align-items-center m-0">Color:</p>
+										<p class="d-flex align-items-center m-0">COLOR:</p>
 										<div class="color-swatch"></div>
+									</div>
+									<div class="attribute-size-wrapper">
+										<p class="d-flex align-items-center m-0">SIZE:</p>
+										<div class="size-swatch">
+											<span class="size-option">12-18 M</span>
+											<span class="size-option">18-24 M</span>
+											<span class="size-option">3-4 Y</span>
+											<span class="size-option">4-5 Y</span>
+											<span class="size-option">5-6 Y</span>
+										</div>
 									</div>
 								</div>
 								<div class="bottom-info">
-
+									<div class="description-wrapper">
+										<p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					This is product details page ({{getName}})
+					<div class="hrborder"></div>
+					<div class="product-bottom-wrapper row w-100">
+						asdfasdf
+					</div>
 				</div>
 				<appFooter/>
 			</div>

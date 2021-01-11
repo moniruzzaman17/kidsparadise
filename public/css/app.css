@@ -14344,6 +14344,7 @@ div.hrborder {
   color: white;
   font-weight: bold;
   font-style: normal;
+  text-decoration: none;
 }
 
 .header-vue {
@@ -15458,6 +15459,11 @@ input[type=email] {
   position: relative;
 }
 
+.product-details-page .product-info .middle-info .attribute-color-wrapper p {
+  font-weight: bold;
+  padding-right: 5px;
+}
+
 .product-details-page .product-info .middle-info .attribute-color-wrapper .color-swatch {
   background-color: #F92E7A;
   pointer-events: none;
@@ -15473,10 +15479,50 @@ input[type=email] {
   top: 2px;
   height: 21px;
   width: 21px;
-  left: 38px;
+  left: 39px;
   border: 2px solid #fff;
   overflow: hidden;
   border-radius: 5px;
+}
+
+.product-details-page .product-info .middle-info .attribute-size-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.product-details-page .product-info .middle-info .attribute-size-wrapper p {
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.product-details-page .product-info .middle-info .attribute-size-wrapper .size-swatch .size-option {
+  display: inline-block;
+  border: 1px solid #e4e4e4;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin: 0 5px 0 0;
+  position: relative;
+  cursor: pointer;
+  padding: 0 10px;
+  top: 4px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px !important;
+  margin-bottom: 10px;
+}
+
+.product-details-page .product-info .middle-info .attribute-size-wrapper .size-swatch .size-option:focus {
+  border: 2px solid #848383;
+  font-family: Roboto-Bold;
+  color: #424242;
+  pointer-events: none;
+}
+
+.product-details-page .product-info .middle-info .attribute-size-wrapper .size-swatch .size-option:active {
+  border: 2px solid #848383;
+  font-family: Roboto-Bold;
+  color: #424242;
+  pointer-events: none;
 }
 
 .product-details-page .product-info .bottom-info {
