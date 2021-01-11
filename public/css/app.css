@@ -14319,6 +14319,13 @@ body {
   overflow-x: hidden;
 }
 
+div.hrborder {
+  width: 100%;
+  height: 1px;
+  margin: 12px 0;
+  background-color: #eaeaec;
+}
+
 .action-button {
   background-color: #00A9E2;
   cursor: pointer;
@@ -15242,6 +15249,22 @@ input[type=email] {
   }
 }
 
+.sale-price {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.cut-price {
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.percent-off {
+  color: red;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
 .category-page {
   width: 98%;
   margin: auto;
@@ -15310,5 +15333,153 @@ input[type=email] {
   padding: 0 13px 0 12px;
   font-weight: bold;
   font-family: sans-serif;
+}
+
+.product-details-page {
+  margin-top: 20px;
+}
+
+.product-details-page .product-gallery .side-product-gallary {
+  padding: 0;
+  /* Make the image fully responsive */
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.product-details-page .product-gallery .side-product-gallary .carousel {
+  margin-top: 40px;
+}
+
+.product-details-page .product-gallery .side-product-gallary .carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.product-details-page .product-gallery .side-product-gallary .carousel-indicators {
+  display: inline-block;
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: static;
+  direction: rtl;
+}
+
+@media screen and (max-width: 992px) {
+  .product-details-page .product-gallery .side-product-gallary .carousel-indicators {
+    display: inline-flex;
+    direction: inherit;
+    height: auto;
+    width: 100%;
+    max-width: 800px;
+    overflow-x: auto;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    overflow-y: hidden;
+    justify-content: normal;
+    margin-bottom: 20px;
+  }
+
+  .product-details-page .product-gallery .side-product-gallary .carousel-inner {
+    margin-left: 0 !important;
+  }
+}
+
+.product-details-page .product-gallery .side-product-gallary ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.product-details-page .product-gallery .side-product-gallary ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.product-details-page .product-gallery .side-product-gallary ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.product-details-page .product-gallery .side-product-gallary ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.product-details-page .product-gallery .side-product-gallary .item {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.product-details-page .product-gallery .side-product-gallary .item.active img {
+  border: 1px solid red;
+  opacity: 1;
+  width: 100%;
+}
+
+.product-details-page .product-gallery .side-product-gallary .item img {
+  border: 1px solid transparent;
+  opacity: 0.5;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.product-details-page .product-gallery .side-product-gallary .item:hover img {
+  border: 1px solid red;
+  opacity: 1;
+}
+
+.product-details-page .product-info {
+  width: 100%;
+}
+
+.product-details-page .product-info .top-info {
+  margin-bottom: 10px;
+}
+
+.product-details-page .product-info .top-info .product-title {
+  font-size: 18px;
+  color: #424242;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+.product-details-page .product-info .top-info .short-description {
+  font-size: 14px;
+  color: #616161;
+  line-height: 20px;
+}
+
+.product-details-page .product-info .middle-info {
+  margin-bottom: 10px;
+}
+
+.product-details-page .product-info .middle-info .attribute-color-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.product-details-page .product-info .middle-info .attribute-color-wrapper .color-swatch {
+  background-color: #F92E7A;
+  pointer-events: none;
+  outline-color: #F92E7A;
+  width: 25px;
+  height: 25px;
+  border-radius: 2px;
+}
+
+.product-details-page .product-info .middle-info .attribute-color-wrapper .color-swatch:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  height: 21px;
+  width: 21px;
+  left: 38px;
+  border: 2px solid #fff;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.product-details-page .product-info .bottom-info {
+  margin-bottom: 10px;
 }
 

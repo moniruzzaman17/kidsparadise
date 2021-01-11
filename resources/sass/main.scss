@@ -15,6 +15,12 @@ body{
 	overflow-x: hidden;
 }
 
+div.hrborder {
+	width: 100%;
+	height: 1px;
+	margin: 12px 0;
+	background-color: #eaeaec;
+}
 .action-button {
 	background-color: #00A9E2;
 	cursor: pointer;

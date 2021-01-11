@@ -8,8 +8,8 @@
 				</div>
 				<div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
 					<div class="row w-100 m-auto product-row"> 
-						<div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2 product-item"  v-for="index in 10" :key="index">
-							<router-link class="item-body" :to="{name: 'categorypage', query: {catName: 'GIRL Fashion' }}">
+						<div class="col-6 col-sm-6 col-md-2 col-lg-2 col-xl-2 product-item"  v-for="index in 10" :key="index">
+							<router-link class="item-body" :to="'/product/details/'+encodeURIComponent('product-details')">
 								<div class="card">
 									<img class="card-img-top" src="http://cdn.fcglcdn.com/brainbees/images/products/438x531/618567a.jpg" alt="Card image cap">
 									<div class="card-body">

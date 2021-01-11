@@ -17,6 +17,8 @@ window.axios = require('axios');
 import ScrollFixedHeader from 'vuejs-scroll-fixed-header';
 Vue.use(ScrollFixedHeader);
 
+import ImageMagnifier from 'vue-image-magnifier';
+Vue.use(ImageMagnifier);
 
 import VueMeta from 'vue-meta'
  
