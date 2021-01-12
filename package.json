@@ -30,10 +30,12 @@
         "@fortawesome/free-solid-svg-icons": "^5.15.1",
         "@fortawesome/vue-fontawesome": "^2.0.0",
         "bootstrap-vue": "^2.19.0",
+        "vue-essential-transitions": "^0.1.7",
         "vue-image-magnifier": "^0.2.1",
         "vue-meta": "^2.4.0",
         "vue-owl-carousel": "^2.0.3",
         "vue-router": "^3.4.9",
+        "vue-simple-range-slider": "^0.1.10",
         "vue-slick-carousel": "^1.0.6",
         "vuejs-scroll-fixed-header": "^1.0.3"
     }
