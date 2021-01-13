@@ -14326,6 +14326,15 @@ div.hrborder {
   background-color: #eaeaec;
 }
 
+.dotted-line {
+  border: 0 none;
+  border-top: 2px dotted #e0e0e0;
+  background: 0 0;
+  height: 0;
+  margin-top: 10px;
+  margin-bottom: 11px;
+}
+
 .action-button {
   background-color: #00A9E2;
   cursor: pointer;
@@ -14337,6 +14346,7 @@ div.hrborder {
   color: white;
   font-weight: bold;
   font-style: normal;
+  border: none;
 }
 
 .action-button:hover {
@@ -15144,9 +15154,20 @@ input[type=email] {
   line-height: 17px;
 }
 
+.cart-wrapper .title {
+  padding: 0 !important;
+}
+
+.cart-wrapper .text-green {
+  color: #7cb342;
+}
+
 .cart-wrapper .tabs {
   margin-top: 20px;
-  background-color: #fff;
+}
+
+.cart-wrapper .tabs .nav-tabs {
+  border-bottom: none;
 }
 
 .cart-wrapper .tabs .nav-tabs .nav-item .nav-link.active {
@@ -15170,8 +15191,14 @@ input[type=email] {
 }
 
 .cart-wrapper .tabs .tab-content {
+  margin-top: 0 !important;
+}
+
+.cart-wrapper .tabs .tab-content .empty-cart-wrapper {
   padding-left: 30px;
   padding-right: 30px;
+  background: #fff;
+  padding-top: 1rem;
 }
 
 .cart-wrapper .tabs .tab-content .empty-cart-wrapper .empty-cart-img-wrapper {
@@ -15192,6 +15219,173 @@ input[type=email] {
   position: relative;
   bottom: 30px;
   font-size: 18px;
+}
+
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .cart-col {
+  width: 98%;
+  border-right: 1px solid #dee2e6;
+  padding-left: 20px;
+  margin-right: 30px;
+  background: #fff;
+  padding-top: 1rem;
+}
+
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .cart-col .cart-card-content {
+  background-color: #fff;
+  padding-bottom: 34px;
+  border: 1px solid transparent;
+  padding-top: 32px;
+  position: relative;
+  border-radius: 3px;
+  margin: 2px 0;
+}
+
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .cart-col .cart-card-content .productImg .cart-card-img {
+  max-width: 112px;
+  max-height: 136px;
+  cursor: pointer;
+}
+
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .cart-col .cart-card-content .cart-card-content-info-1 {
+  padding-right: 2px;
+}
+
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .cart-col .cart-card-content .cart-card-content-info-1 .content-title {
+  font-size: 16px;
+  color: #424242;
+  line-height: 22px;
+}
+
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .cart-col .cart-card-content .cart-card-content-info-1 .product-config {
+  margin-top: 11px;
+}
+
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .cart-col .cart-card-content .cart-card-content-info-1 .cart-card-content-info-2 .price {
+  font-weight: bold;
+  font-size: 18px;
+  color: #424242;
+  line-height: 25px;
+}
+
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .cart-col .cart-card-content .cart-card-content-info-2 {
+  border-left: 1px solid #dee2e6;
+}
+
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .cart-col .cart-card-content .cart-card-content-info-2 .price {
+  font-weight: bold;
+  font-size: 18px;
+  color: #424242;
+  line-height: 25px;
+}
+
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .cart-col .cart-card-content .cart-card-content-info-2 .qty .product-qty {
+  line-height: 40px;
+  text-align: center;
+  padding: 0;
+  border: 1px solid #eaeaea;
+  background: #fff;
+}
+
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .cart-col .cart-card-content .cart-card-content-info-2 .qty .product-qty:focus {
+  outline: 0;
+}
+
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .cart-col .cart-card-content .cart-card-content-info-2 .qty .product-qty::-webkit-inner-spin-button,
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .cart-col .cart-card-content .cart-card-content-info-2 .qty .product-qty::-webkit-outer-spin-button {
+  opacity: 0;
+  -webkit-appearance: none;
+}
+
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .cart-details-col {
+  width: 98%;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #fff;
+  padding-top: 1rem;
+  float: right;
+  border-right: 1px solid #dee2e6;
+}
+
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .cart-details-col .overview-wrapper p {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  font-size: 13px;
+  color: #757575;
+  line-height: 22px;
+}
+
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .discount-coupon {
+  width: 98%;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #fff;
+  padding-top: 1rem;
+  margin-bottom: 10px;
+  float: right;
+  border-right: 1px solid #dee2e6;
+  padding-bottom: 20px;
+}
+
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .discount-coupon .form-group {
+  position: relative;
+}
+
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .discount-coupon .form-group + .form-group {
+  margin-top: 30px;
+}
+
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .discount-coupon .form-label {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: #999;
+  background-color: #fff;
+  z-index: 10;
+  transition: transform 150ms ease-out, font-size 150ms ease-out;
+}
+
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .discount-coupon .focused .form-label {
+  transform: translateY(-125%);
+  font-size: 0.75em;
+}
+
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .discount-coupon .form-input {
+  position: relative;
+  padding: 12px 0px 5px 0;
+  width: 70%;
+  outline: 0;
+  border: 0;
+  box-shadow: 0 1px 0 0 #e5e5e5;
+  transition: box-shadow 150ms ease-out;
+}
+
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .discount-coupon .form-input:focus {
+  box-shadow: 0 2px 0 0 #00A9E2;
+}
+
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .discount-coupon .form-input.filled {
+  box-shadow: 0 2px 0 0 lightgreen;
+}
+
+.cart-wrapper .tabs .tab-content .product-cart-wrapper .cart-wrapper .discount-coupon .coupon-apply-btn {
+  width: 65px;
+  height: 22px;
+  border: 1px solid #00A9E2;
+  border-radius: 3px;
+  background: 0 0;
+  cursor: pointer;
+  position: relative;
+  bottom: -10px;
+  float: right;
+  right: 1px;
+}
+
+.cart-wrapper .tabs .tab-content .empty-shortlist-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+  background: #fff;
+  padding-top: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -15258,6 +15452,7 @@ input[type=email] {
 .cut-price {
   padding-left: 10px;
   font-size: 14px;
+  color: #757575;
 }
 
 .percent-off {

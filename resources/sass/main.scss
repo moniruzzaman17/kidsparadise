@@ -21,6 +21,14 @@ div.hrborder {
 	margin: 12px 0;
 	background-color: #eaeaec;
 }
+.dotted-line{
+	border: 0 none;
+	border-top: 2px dotted #e0e0e0;
+	background: 0 0;
+	height: 0;
+	margin-top: 10px;
+	margin-bottom: 11px;
+}
 .action-button {
 	background-color: #00A9E2;
 	cursor: pointer;
@@ -32,6 +40,7 @@ div.hrborder {
 	color: white;
 	font-weight: bold;
 	font-style: normal;
+	border: none;
 	&:hover{
 		background-color: #0153B4;
 		color: white;

@@ -117,10 +117,10 @@
 						<div class="reviewRating-wrapper w-100">
 							<h1 class="title">RATINGS & REVIEWS</h1>
 							<div class="row w-100 m-auto">
-								<div class="col-12 col-sm-12 col-md-3">
-									<img src="/medias/rating-star.jpg" alt="">
+								<div class="col-12 col-sm-12 col-md-3 order-2">
+									<!-- <img src="/medias/rating-star.jpg" alt=""> -->
 								</div>
-								<div class="col-12 col-sm-12 col-md-9">
+								<div class="col-12 col-sm-12 col-md-9 order-1">
 									<form action="" method="POST" style="padding: 18px" class="w-100">
 										<div class="form-group row m-auto">
 											<label for="rating" class="col-2 col-sm-2 col-form-label required">Rating</label>
@@ -146,6 +146,12 @@
 											<label for="review" class="col-2 col-sm-2 col-form-label required">Review</label>
 											<div class="col-10 col-sm-10 review-box">
 												<textarea name="" id="review" cols="30" rows="10" class="review-textarea"></textarea>
+											</div>
+										</div>
+										<div class="form-group row m-auto review">
+											<label for="review" class="col-2 col-sm-2 col-form-label"></label>
+											<div class="col-10 col-sm-10 review-box">
+												<input type="submit" value="Review this Product" class="action-button">
 											</div>
 										</div>
 									</form>
