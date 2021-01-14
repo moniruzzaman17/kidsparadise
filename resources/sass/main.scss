@@ -49,6 +49,27 @@ div.hrborder {
 		text-decoration: none;
 	}
 }
+.action{
+	.trash-button, .shortlist-button{
+		width: 46px;
+		height: 32px;
+		border: 1px solid #e0e0e0;
+		border-radius: 3px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 9px;
+		color: #9e9e9e;
+		padding: 0;
+		margin-top: 8px;
+		&:hover{
+			color: red;
+			border-color: #9e9e9e;
+			// .fa-heart{
+			// 	background: red;
+			// }
+		}
+	}
+}
 
 .header-vue{
 	background-color: #fff;

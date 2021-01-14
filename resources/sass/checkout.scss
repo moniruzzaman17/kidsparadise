@@ -1,0 +1,44 @@
+// Variables
+@import 'variables';
+
+.checkout-wrapper{
+	.customer-wrapper{
+		.customer-info{
+			padding: 10px;
+			// margin-left: 15px;
+			// margin-right: 15px;
+			// margin-bottom: 15px;
+			background: #fff;
+		}
+	}
+	.delivery-wrapper{
+		.delivery-info{
+			padding: 10px;
+			// margin-left: 15px;
+			// margin-right: 15px;
+			// margin-bottom: 15px;
+			background: #fff;
+		}
+	}
+	.overview-wrapper{
+		.overview-info{
+			padding: 10px;
+			// margin-left: 15px;
+			// margin-right: 15px;
+			// margin-bottom: 15px;
+			background: #fff;
+		}
+	}
+}
+
+// deskotp version
+@media (max-width: $medium) {
+	.checkout-wrapper{
+	}
+}
+
+// Mobile version
+@media (min-width: $medium+1) { 
+	.checkout-wrapper{
+	}
+}

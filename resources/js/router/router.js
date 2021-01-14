@@ -13,6 +13,7 @@ import Register from'../components/auth/Register.vue';
 import Cart from'../components/cart/Cart.vue';
 import CategoryPage from'../components/catalog/CategoryPage.vue';
 import ProductDetails from'../components/catalog/ProductDetails.vue';
+import Checkout from'../components/checkout/Checkout.vue';
 
 const routes = new VueRouter({
 	mode: 'history',
@@ -51,6 +52,11 @@ const routes = new VueRouter({
 			path: '/product/details/:pname',
 			component: ProductDetails,
 			name: 'productdetails',
+		},
+		{
+			path: '/checkout',
+			component: Checkout,
+			name: 'checkout',
 		}
 	]
 });

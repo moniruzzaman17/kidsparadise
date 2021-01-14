@@ -28,12 +28,27 @@
 											<div class="product-config">
 
 											</div>
-											<div class="cart-card-content-info-2 col-12 col-sm-8 col-md-3 mobile-cart-transformation"></div>
-											<div class="action">
-												<button class="btn"><i class="fa fa-trash"></i></button>
+											<div :class="'cart-card-content-info-2 col-12 col-sm-8 col-md-3 mobile-cart-transformation mobile'">
+												<span class="price">৳ 500</span>
+												<div>
+													<s class="cut-price">৳ 600</s>
+													<span class="percent-off">26% OFF</span>
+												</div>
+												<div class="qty">
+													<label for="">Qty: &nbsp;</label>
+													<div style="border: 1px solid #eaeaea;" class="row w-100 m-auto d-flex align-items-center">
+														<span style="cursor: pointer;" @click="decreaseQty(n)" class="minus col-4 col-sm-4"><i class="fa fa-minus" aria-hidden="true"></i></span>
+														<input ref="qty" :class="'quantity'+n+' product-qty col-4 col-sm-4'"  min="1" max="10" name="details_qty" value="1" type="number"readonly="readonly">
+														<span style="cursor: pointer;" @click="increaseQty(n)"  class="plus"><i class="fas fa-plus col-4 col-sm-4"></i></span>
+													</div>
+												</div>
+												<div class="action">
+													<button class="btn trash-button"><i class="fa fa-trash"></i></button>
+													<button class="btn shortlist-button"><i class="fa fa-heart" aria-hidden="true"></i></button>
+												</div>
 											</div>
 										</div>
-										<div class="cart-card-content-info-2 col-12 col-sm-8 col-md-3">
+										<div class="cart-card-content-info-2 col-12 col-sm-8 col-md-3 desktop">
 											<span class="price">৳ 500</span>
 											<div>
 												<s class="cut-price">৳ 600</s>
@@ -42,10 +57,14 @@
 											<div class="qty">
 												<label for="">Qty: &nbsp;</label>
 												<div style="border: 1px solid #eaeaea;" class="row w-100 m-auto d-flex align-items-center">
-													<span style="cursor: pointer;" @click="decreaseQty" class="minus col-4 col-sm-4"><i class="fa fa-minus" aria-hidden="true"></i></span>
-													<input ref="qty" class="quantity product-qty col-4 col-sm-4" min="1" max="10" name="details_qty" value="1" type="number"readonly="readonly">
-													<span style="cursor: pointer;" @click="increaseQty"  class="plus"><i class="fas fa-plus col-4 col-sm-4"></i></span>
+													<span style="cursor: pointer;" @click="decreaseQty(n)" class="minus col-4 col-sm-4"><i class="fa fa-minus" aria-hidden="true"></i></span>
+													<input ref="qty" :class="'quantity'+n+' product-qty col-4 col-sm-4'"  min="1" max="10" name="details_qty" value="1" type="number"readonly="readonly">
+													<span style="cursor: pointer;" @click="increaseQty(n)"  class="plus"><i class="fas fa-plus col-4 col-sm-4"></i></span>
 												</div>
+											</div>
+											<div class="action">
+												<button class="btn trash-button"><i class="fa fa-trash"></i></button>
+												<button class="btn shortlist-button"><i class="fa fa-heart" aria-hidden="true"></i></button>
 											</div>
 										</div>
 									</div>
@@ -72,6 +91,11 @@
 										<p>Sub Total <span>৳ 460</span></p>
 										<hr class="dotted-line">
 										<p>Grand Total <span>৳ 460</span></p>
+									</div>
+								</div>
+								<div class="action-col">
+									<div class="action-wrapper">
+										<router-link :to="{name: 'checkout'}" class="action-button">Proceed to Checkout</router-link>
 									</div>
 								</div>
 							</div>
@@ -110,6 +134,7 @@
 		},
 		data(){
 			return {
+
 			}
 		},
 		mounted(){
@@ -131,32 +156,31 @@
 							$(this).addClass('filled');
 						}
 					});
-					// $(window).on('resize', function(){
-					// 	var win = $(this);
-					// 	// if (win.height() >= 820) {
-					// 	// }
-					// 	if (win.width() <= 768) {
-					// 		$('.cart-card-content-info-2').appendTo('.mobile-cart-transformation');
-					// 	}
-					// });
+
+					setInterval(() => {
+						var w = window.innerWidth;
+						if (w <= 768) {
+							this.clientsTestimonialsPages = 1
+						}
+						else {
+							this.clientsTestimonialsPages = 4
+						}
+					}, 100);
 				});
 			},
-			decreaseQty(e){
+			decreaseQty(n){
 				console.log('Inside decreaseQty');
-				// if (parseInt(this.$refs.qty.value) > 1) {
-				// 	console.log('Inside if decreaseQty');
-				// 	console.log('Inside if decreaseQty');
-				// 	this.$refs.qty.value = parseInt(this.$refs.qty.value)-1;
-				// }
+				if (parseInt($('.quantity'+n).val()) > 1) {
+					$({ val: parseInt($('.quantity'+n).val()) }).animate({ val: parseInt($('.quantity'+n).val())-1 }, { step: function(val) {$('.quantity'+n).val(val) }});
+					
+				}
 			},
-			increaseQty(e){
+			increaseQty(n){
 				console.log('Inside increaseQty');
-				var clickedElement = e.target;
-				console.log($(clickedElement +' .quantity').html());
-				// if (parseInt(this.$refs.qty.value) < 10) {
-				// 	console.log('Inside if increaseQty');
-				// 	this.$refs.qty.value = parseInt(this.$refs.qty.value)+1;
-				// }
+				if (parseInt($('.quantity'+n).val()) < 10) {
+					$({ val: parseInt($('.quantity'+n).val()) }).animate({ val: parseInt($('.quantity'+n).val())+1 }, { step: function(val) {$('.quantity'+n).val(val) }});
+				}
+
 			}
 		},
 

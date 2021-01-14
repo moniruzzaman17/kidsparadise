@@ -163,6 +163,20 @@
 							}
 						}
 					}
+					.action-col{
+						width: 98%;
+						padding-left: 20px;
+						padding-right: 20px;
+						background: #fff;
+						padding-top: 1rem;
+						float: right;
+						border-right: 1px solid #dee2e6;
+						border-bottom: 1px solid #dee2e6;
+						.action-wrapper{
+							width: 100%;
+							display: inline-grid;
+						}
+					}
 					.discount-coupon{
 						width: 98%;
 						padding-left: 20px;
