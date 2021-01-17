@@ -18,3 +18,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('{any}', 'WelcomeController@index')->where('any','.*');
 
+
+// Route::group([
+// 	'prefix' => 'admincp'], function () {
+
+		Route::get('admincp', 'admin\IndexController@index')->name('admin.home');
+	// });

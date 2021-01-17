@@ -6,9 +6,10 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
     {!! SEO::generate() !!}
 
+    <link rel="icon" href="/medias/img/favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="/medias/img/favicon.ico" />
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -23,7 +24,7 @@
             @yield('content')
         </main>
     </div>
-<!-- Scripts -->
-<script defer src="{{ mix('js/app.js') }}"></script>
+    <!-- Scripts -->
+    <script defer src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
