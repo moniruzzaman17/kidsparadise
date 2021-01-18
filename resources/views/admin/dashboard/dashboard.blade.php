@@ -8,7 +8,7 @@
 				<div class="heading d-flex align-items-center justify-content-center">
 					Today's Order
 				</div>
-				<div class="num">{{$todayOrder}}</div>
+				<div class="num">1</div>
 			</div>
 		</div>
 		<div class="col-md-4">
@@ -16,7 +16,7 @@
 				<div class="heading d-flex align-items-center justify-content-center">
 					Current Month's Order
 				</div>
-				<div class="num">{{$correntMonthOrder}}</div>
+				<div class="num">1</div>
 			</div>
 		</div>
 		<div class="col-md-4">
@@ -24,7 +24,7 @@
 				<div class="heading d-flex align-items-center justify-content-center">
 					Total Order
 				</div>
-				<div class="num">{{$totalOrder}}</div>
+				<div class="num">1</div>
 			</div>
 		</div>
 	</div>
@@ -37,7 +37,7 @@
 				<div class="heading d-flex align-items-center justify-content-center">
 					PENDING
 				</div>
-				<div class="num">{{$pendingCount}}</div>
+				<div class="num">1</div>
 			</div>
 		</div>
 		<div style="width: 20%; float: left;">
@@ -45,7 +45,7 @@
 				<div class="heading d-flex align-items-center justify-content-center">
 					ON HOLD
 				</div>
-				<div class="num">{{$onholdCount}}</div>
+				<div class="num">1</div>
 			</div>
 		</div>
 		<div style="width: 20%; float: left;">
@@ -53,7 +53,7 @@
 				<div class="heading d-flex align-items-center justify-content-center">
 					PROCESSING
 				</div>
-				<div class="num">{{$processingCount}}</div>
+				<div class="num">1</div>
 			</div>
 		</div>
 		<div style="width: 20%; float: left;">
@@ -61,7 +61,7 @@
 				<div class="heading d-flex align-items-center justify-content-center">
 					COMPLETE
 				</div>
-				<div class="num">{{$completeCount}}</div>
+				<div class="num">1</div>
 			</div>
 		</div>
 		<div style="width: 20%; float: left;">
@@ -69,7 +69,7 @@
 				<div class="heading d-flex align-items-center justify-content-center">
 					CANCELLED
 				</div>
-				<div class="num">{{$canceledCount}}</div>
+				<div class="num">1</div>
 			</div>
 		</div>
 	</div>
@@ -82,7 +82,7 @@
 				<div class="heading d-flex align-items-center justify-content-center">
 					TOTAL REGISTERED CUSTOMER
 				</div>
-				<div class="num">{{$totalCustomer}}</div>
+				<div class="num">1</div>
 			</div>
 		</div>
 	</div>
