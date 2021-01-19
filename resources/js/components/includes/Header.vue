@@ -81,7 +81,7 @@
 <scroll-fixed-header :fixed.sync="fixed" :threshold="300">
 	<div>
 		<div class="header-vue">
-			<b-navbar toggleable="lg" class="container">
+			<b-navbar toggleable="md" class="container-lg">
 				<div class="for-mob-header">
 					<div class="for-mob-brand">
 						<b-navbar-toggle v-b-toggle.sidebar-backdrop target="nav-collapse"></b-navbar-toggle>
@@ -126,7 +126,7 @@
 					<!-- <b-nav-form class="w-100 desk-search-li">
 						<b-form-input size="sm" class="mr-sm-2 serach-box" placeholder="Search"></b-form-input>
 					</b-nav-form> -->
-					<li class="w-100">
+					<li class="desk-search-box">
 						<form action="">
 							<div class="input-group">
 								<input type="text" class="form-control serach-box" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
@@ -148,7 +148,7 @@
 		</b-navbar>
 		<div class="menu-container desk-menu w-100 position-relative">
 			<div class="container">
-				<nav class="navbar navbar-expand-lg navbar-dark">
+				<nav class="navbar navbar-expand-md navbar-dark">
 					<div class="" id="main_nav">
 						<ul class="navbar-nav product-menubar-ul">
 							<li class="nav-item d-flex align-items-center" style="height: 50px;">

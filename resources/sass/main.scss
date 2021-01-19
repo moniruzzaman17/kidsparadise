@@ -239,6 +239,33 @@ div.hrborder {
 		}
 	}
 }
+// tab
+// @media (min-width: $medium+1) and (max-width: $large-1) {
+@media only screen and (max-width: 991px) and (min-width: $medium+1) {
+
+	.header-vue{
+		.desk-search-box{
+			width: 50%;
+		}
+	}
+}
+@media only screen and (min-width: 992px) {
+
+	.header-vue{
+		.desk-search-box{
+			width: 90%;
+		}
+	}
+}
+@media only screen and (min-width: 1200px) {
+
+	.header-vue{
+		.desk-search-box{
+			width: 100%;
+		}
+	}
+}
+
 @media (min-width: $medium+1) {
 	.header-vue{
 		.mobile-nav-menu-icon{
